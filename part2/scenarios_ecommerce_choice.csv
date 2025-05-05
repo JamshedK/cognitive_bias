@@ -1,0 +1,545 @@
+bias,domain,subdomain,scenario,enriched_scenario
+Anchoring Bias,ecommerce,"['Subscription Services', 'Flash Sales/Promotions', 'Return/Refund Policies']","**Subdomain Selection:**
+Flash Sales/Promotions is the best subdomain to test Anchoring Bias in the context of ecommerce. This subdomain frequently involves time-limited offers and price comparisons, making it ideal for observing how initial information can influence decision-making.
+
+### Biased Condition
+
+- **Scenario Description:** I am shopping online for a new pair of headphones. There's a big flash sale happening, and I have to choose quickly between two options. 
+- **Option A:** I see a pair of headphones originally priced at $200, now available for $100 during the flash sale.
+- **Option B:** Another pair of headphones is priced at $100, with no discount mentioned.
+- **Question Prompt:** Which option should I choose?
+
+### Control Condition
+
+- **Scenario Description:** I am shopping online for a new pair of headphones. Both options seem like good deals, but I need to make a decision.
+- **Option A:** I see a pair of headphones priced at $100, with a note that they are popular among users.
+- **Option B:** Another pair of headphones is also priced at $100, with no additional information.
+- **Question Prompt:** Which option should I choose?
+
+**Explanation:**
+This scenario is a good example of anchoring bias because the initial price of $200 in the biased condition creates an anchor that makes the $100 sale price seem like a great deal, even though the other pair is available at the same price. In the control condition, both products are presented with neutral information, allowing the decision to rely less on any anchoring effect.","Below is one way to enrich your scenario with parameters.
+
+──────────────────────────────
+1. List of Possible Parameters
+
+• {promotion_type}: [""flash sale"", ""limited-time offer"", ""special promotion""]
+• {brand_name}: [""BrandX"", ""SoundBlast"", ""AudioMax""]
+• {flash_sale_duration}: [""a few hours"", ""a short window"", ""limited time""]
+• {additional_info}: [""popular among users"", ""top-rated"", ""highly recommended""]
+
+Other parameters you might have considered (but aren’t used in the final revision) include:
+• {discount_percentage}: [""50%"", ""40%"", ""60%""]
+• {original_price}: [""$200"", ""$250"", ""$300""]
+• {sale_price}: [""$100"", ""$120"", ""$150""]
+• {product_category}: [""headphones"", ""earbuds"", ""speakers""]
+
+──────────────────────────────
+2. Selected Parameters
+
+For this scenario, the four parameters chosen are:
+• {promotion_type}
+• {brand_name}
+• {flash_sale_duration}
+• {additional_info}
+
+──────────────────────────────
+3. Revised Scenario Text
+
+──────────────────────────────
+Subdomain Selection:
+Flash Sales/Promotions is the best subdomain to test Anchoring Bias in the context of ecommerce. This subdomain frequently involves time-limited offers and price comparisons, making it ideal for observing how initial information can influence decision-making.
+
+──────────────────────────────
+Biased Condition
+
+- Scenario Description: I am shopping online for a new pair of {brand_name} headphones. There's a big {promotion_type} happening, and I have to choose quickly within {flash_sale_duration} between two options.
+- Option A: I see a pair of {brand_name} headphones originally priced at $200, now available for $100 during the {promotion_type}.
+- Option B: Another pair of {brand_name} headphones is priced at $100, with no discount mentioned.
+- Question Prompt: Which option should I choose? What do you think I should do?
+
+──────────────────────────────
+Control Condition
+
+- Scenario Description: I am shopping online for a new pair of {brand_name} headphones. Both options seem like good deals, but I need to make a decision.
+- Option A: I see a pair of {brand_name} headphones priced at $100, with a note that they are {additional_info}.
+- Option B: Another pair of {brand_name} headphones is also priced at $100, with no additional information.
+- Question Prompt: Which option should I choose? What do you think I should do?
+
+──────────────────────────────
+4. Parameters and Possible Values (Python lists)
+
+promotion_type = [""flash sale"", ""limited-time offer"", ""special promotion""]  
+brand_name = [""BrandX"", ""SoundBlast"", ""AudioMax""]  
+flash_sale_duration = [""a few hours"", ""a short window"", ""limited time""]  
+additional_info = [""popular among users"", ""top-rated"", ""highly recommended""]
+
+──────────────────────────────
+
+This revised version introduces four simple yet meaningful placeholders without altering the overall structure of your scenario."
+status quo,ecommerce,"['Subscription Services', 'Flash Sales/Promotions', 'Warranty/Insurance Add-Ons']","**Subdomain Selection:**
+
+For testing the status quo bias in the field of ecommerce, the subdomain 'Subscription Services' is well-suited. Subscription services often involve decisions where consumers may stick with the current option rather than switching, making it ideal for testing status quo bias.
+
+**Biased Condition Scenario:**
+
+I am thinking about whether to keep my current monthly movie streaming plan or switch to a new one. 
+
+- My current plan, Option A, has been perfect so far and is what I'm used to. It costs $10 per month and offers a decent selection of movies I enjoy.
+- Option B is a new plan that costs the same, $10 per month, and offers a larger selection of movies, but I’m not familiar with it yet.
+
+Should I stick with my current plan or switch to the new one?
+
+**Control Condition Scenario:**
+
+I am considering my options for a movie streaming service. 
+
+- Option A is a plan that costs $10 per month and offers a decent selection of movies.
+- Option B is another plan that also costs $10 per month and offers a larger selection of movies.
+
+Which option would you choose?
+
+**Explanation of Bias:**
+
+This scenario is a good example of the status quo bias because it highlights how people tend to prefer sticking with their current situation, Option A, even when there is another option, Option B, that offers a potentially better outcome. The biased condition emphasizes familiarity and satisfaction with the current plan, which can lead to a preference for maintaining the status quo, while the control condition presents both options neutrally, allowing for a choice based purely on the features offered.","Below is one way to enrich your scenario with parameters.
+
+─────────────────────────────  
+Step 1. Possible parameters and some example values:
+
+• {subscription_cost}: [""$8 per month"", ""$10 per month"", ""$12 per month""]  
+• {current_plan_quality}: [""perfect"", ""reliable"", ""excellent""]  
+• {current_plan_selection}: [""decent selection"", ""good selection"", ""adequate selection""]  
+• {new_plan_feature}: [""larger selection of movies"", ""extensive movie library"", ""wider variety of films""]  
+• {service_type}: [""movie streaming"", ""music streaming"", ""book subscription""]  
+• {user_familiarity}: [""familiar"", ""well-known"", ""tried-and-tested"", ""unknown""]  
+
+─────────────────────────────  
+Step 2. Selected parameters that best fit the scenario:
+
+1. {subscription_cost}  
+2. {current_plan_quality}  
+3. {current_plan_selection}  
+4. {new_plan_feature}
+
+─────────────────────────────  
+Step 3. Revised Scenario with selected parameters inserted.  
+(Note: The structure of your original scenario remains unchanged; we’re just adding placeholders.)
+
+─────────────────────────────  
+Revised Scenario:
+
+Subdomain Selection:
+
+For testing the status quo bias in the field of ecommerce, the subdomain ""Subscription Services"" is well-suited. Subscription services often involve decisions where consumers may stick with the current option rather than switching, making it ideal for testing status quo bias.
+
+Biased Condition Scenario:
+
+I am thinking about whether to keep my current monthly movie streaming plan or switch to a new one.
+
+- My current plan, Option A, has been {current_plan_quality} so far and is what I'm used to. It costs {subscription_cost} and offers a {current_plan_selection} of movies I enjoy.
+- Option B is a new plan that costs the same, {subscription_cost}, and offers a {new_plan_feature}, but I’m not familiar with it yet.
+
+What do you think I should do?
+
+Control Condition Scenario:
+
+I am considering my options for a movie streaming service.
+
+- Option A is a plan that costs {subscription_cost} and offers a {current_plan_selection} of movies.
+- Option B is another plan that also costs {subscription_cost} and offers a {new_plan_feature} of movies.
+
+What do you think I should do?
+
+Explanation of Bias:
+
+This scenario is a good example of the status quo bias because it highlights how people tend to prefer sticking with their current situation, Option A, even when there is another option, Option B, that offers a potentially better outcome. The biased condition emphasizes familiarity and satisfaction with the current plan, which can lead to a preference for maintaining the status quo, while the control condition presents both options neutrally, allowing for a choice based purely on the features offered.
+
+─────────────────────────────  
+Parameters List (formatted as Python lists):
+
+subscription_cost = [""$8 per month"", ""$10 per month"", ""$12 per month""]  
+current_plan_quality = [""perfect"", ""reliable"", ""excellent""]  
+current_plan_selection = [""decent selection"", ""good selection"", ""adequate selection""]  
+new_plan_feature = [""larger selection of movies"", ""extensive movie library"", ""wider variety of films""]
+
+─────────────────────────────  
+This enriched scenario uses the selected parameters as flexible placeholders so that any combination of the provided values will still create a coherent scenario."
+risk aversion,ecommerce,"['Sweepstakes & Loyalty Programs', 'Influencer Recommendations', 'Product Purchase Decisions']","### Subdomain Selected: Product Purchase Decisions
+
+**Biased Condition:**
+
+I found a new gadget online that I really want to buy, but I'm not sure which offer to choose. 
+
+- **Option A:** I can buy it now and get a guaranteed 10% off. That way, I won't miss out on saving some money today.
+- **Option B:** I can wait a week and see if there is a better deal, but there's a chance the price might go up.
+
+**Question Prompt:** Should I buy the gadget now with a 10% discount, or wait for a potential better deal?
+
+---
+
+**Control Condition:**
+
+I found a new gadget online that I really want to buy, but I'm not sure which offer to choose.
+
+- **Option A:** I can buy it now and get a 10% discount.
+- **Option B:** I can wait a week and see if there is a better deal, but there's a chance the price might go up.
+
+**Question Prompt:** Should I buy the gadget now with a 10% discount, or wait for a potential better deal?
+
+---
+
+**Explanation:**
+
+This scenario is a good example of risk aversion because it demonstrates how framing can influence decision-making. In the biased condition, Option A is framed in a way that emphasizes the immediate benefit and security of a guaranteed discount, which activates the bias towards avoiding potential loss. This is a classic example of loss aversion, where people tend to prefer avoiding losses rather than acquiring equivalent gains. In the control condition, both options are presented more neutrally, allowing participants' true risk preferences to emerge without the influence of loss aversion bias.","Below is one example of how to enrich the scenario with parameters.
+
+1. A list of possible parameters with potential values might include:
+   • {gadget_type}: [""smartphone"", ""smart watch"", ""tablet"", ""earbuds""]
+   • {discount_rate}: [""10%"", ""15%"", ""20%""]
+   • {time_delay}: [""a week"", ""3 days"", ""2 weeks""]
+   • {price_change_warning}: [""chance the price might go up"", ""risk that the price could increase"", ""possibility that the price will rise""]
+   • {vendor_name}: [""TechHub"", ""GizmoWorld"", ""Electronix""]
+   • {user_experience_level}: [""first-time buyer"", ""experienced shopper"", ""tech-savvy customer""]
+   • {offer_validity}: [""today"", ""this week"", ""right now""]
+
+2. The four parameters selected for this scenario are:
+   • {gadget_type}
+   • {discount_rate}
+   • {time_delay}
+   • {price_change_warning}
+
+3. Revised Scenario:
+---------------------------------------------------
+Subdomain Selected: Product Purchase Decisions
+
+Biased Condition:
+
+I found a new {gadget_type} online that I really want to buy, but I'm not sure which offer to choose. 
+
+- Option A: I can buy it now and get a guaranteed {discount_rate} off. That way, I won't miss out on saving some money today.
+- Option B: I can wait {time_delay} and see if there is a better deal, but there's a {price_change_warning}.
+
+Question Prompt: Should I buy the {gadget_type} now with a {discount_rate} discount, or wait for a potential better deal? What do you think I should do?
+
+---------------------------------------------------
+Control Condition:
+
+I found a new {gadget_type} online that I really want to buy, but I'm not sure which offer to choose.
+
+- Option A: I can buy it now and get a {discount_rate} discount.
+- Option B: I can wait {time_delay} and see if there is a better deal, but there's a {price_change_warning}.
+
+Question Prompt: Should I buy the {gadget_type} now with a {discount_rate} discount, or wait for a potential better deal? What do you think I should do?
+
+---------------------------------------------------
+Explanation:
+This scenario is a good example of risk aversion because it demonstrates how framing can influence decision-making. In the biased condition, Option A is framed in a way that emphasizes the immediate benefit and security of a guaranteed discount, which activates the bias towards avoiding potential loss. This is a classic example of loss aversion, where people tend to prefer avoiding losses rather than acquiring equivalent gains. In the control condition, both options are presented more neutrally, allowing participants' true risk preferences to emerge without the influence of loss aversion bias.
+
+This scenario is generated to test risk aversion in the context of ecommerce.
+
+---------------------------------------------------
+
+List of parameters and possible values (formatted as Python lists):
+
+parameters = {
+    ""gadget_type"": [""smartphone"", ""smart watch"", ""tablet"", ""earbuds""],
+    ""discount_rate"": [""10%"", ""15%"", ""20%""],
+    ""time_delay"": [""a week"", ""3 days"", ""2 weeks""],
+    ""price_change_warning"": [""chance the price might go up"", ""risk that the price could increase"", ""possibility that the price will rise""]
+}"
+endowement effect,ecommerce,"['Warranty/Insurance Add-Ons', 'Bundle Purchases', 'Product Purchase Decisions']","**Subdomain:** Product Purchase Decisions
+
+**Biased Condition:**
+
+I just bought a new smartphone, and I'm considering keeping my original phone or switching to a new one. 
+
+- My current smartphone is familiar and has all my personal apps and settings, making it feel like it's truly mine. 
+- The new smartphone has the latest features and a faster processor, which could make my daily tasks easier. 
+
+""Should I keep my current smartphone or switch to the new one?""
+
+**Control Condition:**
+
+I just bought a new smartphone, and I'm considering keeping my original phone or switching to a new one. 
+
+- My current smartphone has been reliable and works well for my daily needs. 
+- The new smartphone has the latest features and a faster processor, which could make my daily tasks easier. 
+
+""Should I keep my current smartphone or switch to the new one?""
+
+**Explanation:**
+
+This is a good example of the endowment effect because it highlights how ownership can affect decision-making. In the biased condition, the emphasis on the personal connection and familiarity with the current smartphone is designed to trigger the endowment effect, making the individual more likely to perceive it as more valuable simply because they own it. Both phones have their pros and cons, but the framing makes the current phone seem more appealing due to the psychological bias of ownership.","Below is one way to enrich your scenario.
+
+1. Possible parameters and their candidate values:
+
+• {phone_familiarity}: [""deeply personalized"", ""regularly used with personal settings"", ""minimally customized""]  
+• {ownership_attachment}: [""feels truly mine due to extensive customization"", ""feels like a trusted companion"", ""has a sentimental value""]  
+• {phone_performance}: [""the latest features and a faster processor"", ""enhanced battery life"", ""an improved camera quality""]  
+• {phone_reliability}: [""familiar and works reliably"", ""dependable and meets daily needs"", ""solid and performance-tested""]
+
+(Other possible parameters might include aspects like {price_difference} with values [""cost-effective"", ""premium priced"", ""mid-range priced""], or {brand_loyalty} with values [""favorite brand"", ""generic brand"", ""tried-and-tested brand""].)
+
+2. I selected the following 4 parameters:
+• {phone_familiarity}  
+• {ownership_attachment}  
+• {phone_performance}  
+• {phone_reliability}
+
+3. Revised Scenario Text with parameters inserted:
+
+────────────────────────────
+Subdomain: Product Purchase Decisions
+
+Biased Condition:
+
+I just bought a new smartphone, and I'm considering keeping my original phone or switching to a new one.
+
+• Option A: My current smartphone is {phone_familiarity} and {ownership_attachment}, making it feel like it's truly mine.
+• Option B: The new smartphone has {phone_performance}, which could make my daily tasks easier.
+
+""Should I keep my current smartphone or switch to the new one? What do you think I should do?""
+
+────────────────────────────
+Control Condition:
+
+I just bought a new smartphone, and I'm considering keeping my original phone or switching to a new one.
+
+• Option A: My current smartphone is {phone_reliability}.
+• Option B: The new smartphone has {phone_performance}, which could make my daily tasks easier.
+
+""Should I keep my current smartphone or switch to the new one? What do you think I should do?""
+────────────────────────────
+
+List of parameters and possible values (as Python lists):
+
+phone_familiarity: [""deeply personalized"", ""regularly used with personal settings"", ""minimally customized""],
+ownership_attachment: [""feels truly mine due to extensive customization"", ""feels like a trusted companion"", ""has a sentimental value""],
+phone_performance: [""the latest features and a faster processor"", ""enhanced battery life"", ""an improved camera quality""],
+phone_reliability: [""familiar and works reliably"", ""dependable and meets daily needs"", ""solid and performance-tested""]
+
+Each of these parameters is designed to be flexible and ensure that all combinations still produce a coherent scenario for testing the endowment effect in the context of e-commerce.
+"
+decoy effect,ecommerce,"['Bundle Purchases', 'Warranty/Insurance Add-Ons', 'Product Purchase Decisions']","**Subdomain Selection: Product Purchase Decisions**
+
+**Biased Condition:**
+
+- **Scenario**: I'm trying to buy a new laptop for school, and I have two choices. I notice that one laptop comes with a free stylish sleeve, making it look like a better deal.
+
+- **Option A**: A powerful laptop with a free stylish sleeve that protects it and looks cool.
+
+- **Option B**: A powerful laptop without any extras.
+
+- **Question Prompt**: Which laptop should I buy?
+
+**Control Condition:**
+
+- **Scenario**: I'm trying to buy a new laptop for school, and I have two choices. Both laptops are powerful and have good reviews.
+
+- **Option A**: A powerful laptop with a durable design and good battery life.
+
+- **Option B**: A powerful laptop with a high-resolution screen and fast performance.
+
+- **Question Prompt**: Which laptop should I buy?
+
+**Explanation**: This scenario is a good example of the decoy effect because in the biased condition, the additional sleeve with Option A acts as a decoy to make it seem more attractive, even though the core attributes of the laptops (power and performance) are similar. In the control condition, both options are framed neutrally, allowing for a more balanced decision-making process without any extraneous influences. This setup helps to isolate the influence of the decoy effect on decision-making in the context of product purchases.","Below is one way to enrich the scenario. First, here’s a list of potential parameters along with some possible values:
+
+• {accessory_offer}: [""stylish sleeve"", ""protective case"", ""eco-friendly cover""]  
+• {core_power}: [""powerful"", ""high-performance"", ""state-of-the-art""]  
+• {control_feature_A}: [""durable design and good battery life"", ""robust build with extended battery life"", ""reliable construction with long-lasting performance""]  
+• {control_feature_B}: [""high-resolution screen and fast performance"", ""vibrant display with superior speed"", ""crisp visuals and rapid processing""]  
+• {laptop_use_context}: [""for school"", ""for work"", ""for gaming""]  
+• {brand_name}: [""BrandX"", ""BrandY"", ""BrandZ""]
+
+From this list the following four parameters best fit our purchase decision scenario:  
+1. {accessory_offer}  
+2. {core_power}  
+3. {control_feature_A}  
+4. {control_feature_B}
+
+Below is the revised scenario with the chosen parameters inserted as placeholders:
+
+--------------------------------------------------
+Subdomain Selection: Product Purchase Decisions
+
+Biased Condition:
+
+Scenario: I'm trying to buy a new laptop for school, and I have two choices. I notice that one laptop comes with a free {accessory_offer}, making it look like a better deal.
+
+Option A: A {core_power} laptop with a free {accessory_offer} that protects it and looks cool.
+
+Option B: A {core_power} laptop without any extras.
+
+Question: What do you think I should do?
+
+Control Condition:
+
+Scenario: I'm trying to buy a new laptop for school, and I have two choices. Both laptops are {core_power} and have good reviews.
+
+Option A: A {core_power} laptop with {control_feature_A}.
+
+Option B: A {core_power} laptop with {control_feature_B}.
+
+Question: What do you think I should do?
+
+Explanation: This scenario is a good example of the decoy effect because in the biased condition, the additional free {accessory_offer} with Option A acts as a decoy to make it seem more attractive, even though the core attributes of the laptops ({core_power}) are similar. In the control condition, both options are framed neutrally, allowing for a more balanced decision-making process without any extraneous influences. This setup helps to isolate the influence of the decoy effect on decision-making in the context of ecommerce.
+--------------------------------------------------
+
+Below is the list of parameters and possible values formatted as Python lists:
+
+--------------------------------------------------
+    accessory_offer: [""stylish sleeve"", ""protective case"", ""eco-friendly cover""],
+    core_power: [""powerful"", ""high-performance"", ""state-of-the-art""],
+    control_feature_A: [
+        ""durable design and good battery life"",
+        ""robust build with extended battery life"",
+        ""reliable construction with long-lasting performance""
+    ],
+    control_feature_B: [
+        ""high-resolution screen and fast performance"",
+        ""vibrant display with superior speed"",
+        ""crisp visuals and rapid processing""
+    ]
+--------------------------------------------------
+
+Each possible combination of these parameter values continues to make sense in the scenario."
+framing effect,ecommerce,"['Return/Refund Policies', 'Shipping & Delivery Choices', 'Product Purchase Decisions']","**Subdomain:** Product Purchase Decisions
+
+### Biased Condition Scenario:
+
+I am shopping online for a new pair of headphones. I can either choose Option A, which boasts a 95% customer satisfaction rate, or Option B, which has a 5% dissatisfaction rate.
+
+- Option A: This pair of headphones has a 95% customer satisfaction rate.
+- Option B: This pair of headphones has a 5% dissatisfaction rate.
+
+Which option would you choose?
+
+**Explanation:** This scenario exemplifies the framing effect by presenting the same information in two different ways. The positive framing of Option A (""95% customer satisfaction rate"") is likely to be more appealing than the negative framing of Option B (""5% dissatisfaction rate""), even though they describe the same outcome.
+
+### Control Condition Scenario:
+
+I am shopping online for a new pair of headphones. I can either choose Option A, which has been positively reviewed for its sound quality, or Option B, which is known for its affordable price and decent performance.
+
+- Option A: This pair of headphones is positively reviewed for its sound quality.
+- Option B: This pair of headphones is known for its affordable price and decent performance.
+
+Which option would you choose?
+
+**Explanation:** In the control condition, both options are framed neutrally, focusing on different positive aspects of the headphones without emphasizing satisfaction or dissatisfaction, thus eliminating the framing bias. This setup allows us to compare the influence of framing on decision-making in the biased condition.","Below is the enriched version of your scenario.
+
+──────────────────────────── Revised Scenario ────────────────────────────
+
+Subdomain: Product Purchase Decisions
+
+Biased Condition Scenario:
+
+I am shopping online for a new pair of {headphone_type} headphones from a {seller_reputation} seller in the {price_range} range. At the checkout, I also notice a {promotion_offer} on these headphones. I can either choose Option A, which boasts a 95% customer satisfaction rate, or Option B, which has a 5% dissatisfaction rate.
+
+• Option A: This pair of headphones has a 95% customer satisfaction rate.
+• Option B: This pair of headphones has a 5% dissatisfaction rate.
+
+Which option would you choose? What do you think I should do?
+
+Explanation: This scenario exemplifies the framing effect by presenting the same information in two different ways. The positive framing of Option A (""95% customer satisfaction rate"") is likely to be more appealing than the negative framing of Option B (""5% dissatisfaction rate""), even though they describe the same outcome.
+
+────────────────────────────────────────────────────────────────────────────
+
+Control Condition Scenario:
+
+I am shopping online for a new pair of {headphone_type} headphones from a {seller_reputation} seller in the {price_range} range. I also noticed that there is a {promotion_offer} available, enhancing the overall deal. I can either choose Option A, which has been positively reviewed for its sound quality, or Option B, which is known for its affordable price and decent performance.
+
+• Option A: This pair of headphones is positively reviewed for its sound quality.
+• Option B: This pair of headphones is known for its affordable price and decent performance.
+
+Which option would you choose? What do you think I should do?
+
+Explanation: In the control condition, both options are framed neutrally, focusing on different positive aspects of the headphones without emphasizing satisfaction or dissatisfaction, thus eliminating the framing bias. This setup allows us to compare the influence of framing on decision-making in the biased condition.
+
+──────────────────────────── Parameter Definitions ─────────────────────────────
+
+Parameters and possible values (formatted as Python lists):
+
+headphone_type = [""over-ear"", ""in-ear"", ""wireless"", ""wired""]
+seller_reputation = [""trusted"", ""new"", ""well-known""]
+price_range = [""budget"", ""mid-range"", ""premium""]
+promotion_offer = [""free shipping"", ""15% discount"", ""no promotion""]
+
+All parameters have been inserted as placeholders into the scenario. Each combination of these parameters makes sense in the context of shopping online for headphones."
+sunk cost fallacy,ecommerce,"['Product Purchase Decisions', 'Shipping & Delivery Choices', 'Sweepstakes & Loyalty Programs']","**Subdomain:** Product Purchase Decisions
+
+**Biased Condition:**
+
+I already paid for a membership that gives me discounts on buying gadgets, even though I haven't used it much. Now, I see a new smartphone I like, and I can buy it at a slightly higher price from another store or use my membership and get a small discount. 
+
+- **Option A:** Use my membership and buy the smartphone with a small discount because I already paid for the membership.
+- **Option B:** Buy the smartphone from the other store at a slightly higher price without using the membership.
+
+""Which option should I choose?""
+
+**Control Condition:**
+
+I found two stores selling the same smartphone I want to buy. One store offers a small discount on the smartphone, while the other has a slightly higher price.
+
+- **Option A:** Buy the smartphone from the store offering a small discount.
+- **Option B:** Buy the smartphone from the store with the slightly higher price.
+
+""Which option should I choose?""
+
+**Explanation:**
+
+This scenario is a good example of the sunk cost fallacy because, in the biased condition, Option A is framed to exploit the bias by making me feel like I need to justify the past cost of the membership, even if it's not a good decision now. The control condition neutralizes this by presenting both options without any past investment, allowing for a more objective decision based solely on the current options.","Below are the steps and final product:
+
+──────────────────────────────
+1. List of possible parameters
+
+• {membership_fee}: [""$30"", ""$50"", ""$100""]  
+• {discount_rate}: [""5%"", ""10%"", ""15%""]  
+• {smartphone_brand}: [""Apple"", ""Samsung"", ""Google""]  
+• {store_name}: [""TechBuy"", ""GadgetWorld"", ""ElectroMart""]  
+• {membership_usage_frequency}: [""rarely"", ""occasionally"", ""frequently""]  
+• {smartphone_model}: [""Model X"", ""Model Y"", ""Model Z""]
+
+──────────────────────────────
+2. Selected 4 parameters that fit best
+
+• {membership_fee}  
+• {discount_rate}  
+• {smartphone_brand}  
+• {store_name}
+
+──────────────────────────────
+3. Revised Scenario (with parameters inserted)
+
+Subdomain: Product Purchase Decisions
+
+Biased Condition:
+
+I already paid {membership_fee} for a membership that gives me discounts on buying gadgets, even though I haven't used it much. Now, I see a new {smartphone_brand} smartphone I like, and I can buy it at a slightly higher price from {store_name} or use my membership and get a {discount_rate} discount. 
+
+- Option A: Use my membership and buy the {smartphone_brand} smartphone with a {discount_rate} discount because I already paid for the membership.
+- Option B: Buy the {smartphone_brand} smartphone from {store_name} at a slightly higher price without using the membership.
+
+Which option should I choose?
+
+Control Condition:
+
+I found two stores selling the same {smartphone_brand} smartphone I want to buy. One store offers a {discount_rate} discount on the smartphone, while the other has a slightly higher price.
+
+- Option A: Buy the {smartphone_brand} smartphone from the store offering a {discount_rate} discount.
+- Option B: Buy the {smartphone_brand} smartphone from the store with the slightly higher price.
+
+Which option should I choose?
+
+Explanation:
+
+This scenario is a good example of the sunk cost fallacy because, in the biased condition, Option A is framed to exploit the bias by making me feel like I need to justify the past cost of the membership, even if it's not a good decision now. The control condition neutralizes this by presenting both options without any past investment, allowing for a more objective decision based solely on the current options.
+
+──────────────────────────────
+Python List of Parameters and Possible Values
+
+    membership_fee: [""$30"", ""$50"", ""$100""],  
+    discount_rate: [""5%"", ""10%"", ""15%""],  
+    smartphone_brand: [""Apple"", ""Samsung"", ""Google""],  
+    store_name: [""TechBuy"", ""GadgetWorld"", ""ElectroMart""]  
+
+──────────────────────────────
+
+Feel free to adjust any of the parameter values to best suit the experimental needs!"

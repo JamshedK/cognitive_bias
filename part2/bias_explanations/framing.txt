@@ -1,0 +1,4 @@
+Framing effect is a cognitive bias where people’s decisions change depending on how options are framed, 
+even when the options are logically identical.[1]Studies show that when both choices are framed positively as gains, 
+the majority of people prefer a certain gain over a probable gain. On the other hand, when both choices are framed negatively as 
+losses, people tend to choose an uncertain loss over an inevitable loss.

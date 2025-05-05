@@ -1,0 +1,495 @@
+bias,domain,subdomain,scenario,enriched_scenario
+Anchoring Bias,education and learning,"['Exam & Study Choices', 'Course/Subject Selection', 'College/Internship Applications']","### Subdomain: Course/Subject Selection
+
+**Biased Condition:**
+
+I am trying to decide which elective to take next semester. I heard that Option A is the most popular course and everyone says it's a sure way to boost my grade. Option B is a course that covers interesting material about ancient civilizations. Which option should I choose?
+
+**Control Condition:**
+
+I am trying to decide which elective to take next semester. Option A covers modern technology trends, which is quite informative. Option B is a course that covers interesting material about ancient civilizations. Which option should I choose?
+
+**Explanation:**
+
+This scenario is a good example of anchoring bias because it demonstrates how highlighting the popularity and perceived grade benefits of Option A can skew the decision-making process. In the biased condition, the emphasis on the popularity and grade-boosting nature of Option A serves as an anchor, potentially leading the person to favor it over Option B, which is framed in a neutral manner. In the control condition, both options are presented neutrally, allowing for a more balanced decision without the influence of an anchoring effect.","Below is one example of how you could enrich the scenario with parameters.
+
+Step 1. Here is a list of possible parameters along with some example values:
+
+• {semester}: [""next semester"", ""fall semester"", ""spring semester""]  
+• {option_a_biased}: [""most popular course"", ""highly recommended course"", ""course with excellent reviews""]  
+• {option_a_control_topic}: [""modern technology trends"", ""cutting-edge industry practices"", ""recent technological developments""]  
+• {option_b_description}: [""interesting material about ancient civilizations"", ""engaging research on ancient civilizations"", ""fascinating perspectives on ancient civilizations""]  
+• {course_format}: [""in-person"", ""online"", ""hybrid""]  
+• {instructor_reputation}: [""well-known"", ""highly experienced"", ""renowned""]
+
+Step 2. In this example, we will select the following four parameters as the best fit:  
+• {semester}  
+• {option_a_biased}  
+• {option_a_control_topic}  
+• {option_b_description}
+
+Step 3. Below is the revised scenario with the parameters inserted. At the end of each condition, a question asks what the participant thinks I should do.
+
+────────────────────────
+Subdomain: Course/Subject Selection
+
+Biased Condition:
+I am trying to decide which elective to take {semester}. I heard that Option A is the {option_a_biased} and everyone says it's a sure way to boost my grade. Option B is a course that covers {option_b_description}. Which option should I choose? What do you think I should do?
+
+Control Condition:
+I am trying to decide which elective to take {semester}. Option A covers {option_a_control_topic}, which is quite informative. Option B is a course that covers {option_b_description}. Which option should I choose? What do you think I should do?
+
+Explanation:
+This scenario is a good example of anchoring bias because it demonstrates how highlighting the popularity and perceived grade benefits of Option A can skew the decision-making process. In the biased condition, the emphasis on the {option_a_biased} aspect of Option A serves as an anchor, potentially leading the person to favor it over Option B, which is framed more neutrally through its focus on {option_b_description}. In the control condition, both options are presented more neutrally — with Option A described by its {option_a_control_topic} content — allowing for a more balanced decision without the influence of an anchoring effect.
+
+This scenario is generated to test Anchoring Bias in the context of education and learning.
+────────────────────────
+
+Below is the list of the selected parameters and their possible values (formatted as Python lists):
+
+semester = [""next semester"", ""fall semester"", ""spring semester""]  
+option_a_biased = [""most popular course"", ""highly recommended course"", ""course with excellent reviews""]  
+option_a_control_topic = [""modern technology trends"", ""cutting-edge industry practices"", ""recent technological developments""]  
+option_b_description = [""interesting material about ancient civilizations"", ""engaging research on ancient civilizations"", ""fascinating perspectives on ancient civilizations""]"
+status quo,education and learning,"['College/Internship Applications', 'Exam & Study Choices', 'Academic Event Participation']","**Subdomain Selection:**  
+The best subdomain for this experiment is 'Exam & Study Choices'. This area often involves decision-making where students might prefer sticking to known methods or routines, thus providing a good context for examining the status quo bias.
+
+---
+
+### Biased Condition Scenario
+
+**Scenario Description:**  
+I have been preparing for my upcoming math exam, and I need to choose how to study effectively. There's a familiar way that I always use and a new method I just learned about.
+
+**Option A:**  
+I could stick with my usual study routine, which has always worked for me in the past and feels comfortable.
+
+**Option B:**  
+I could try the new study method that my teacher recommended, which might be beneficial but is unfamiliar to me.
+
+**Question Prompt:**  
+Should I keep my usual study routine or switch to the new method?
+
+---
+
+### Control Condition Scenario
+
+**Scenario Description:**  
+I have been preparing for my upcoming math exam, and I need to choose how to study effectively. I'm considering two different study methods.
+
+**Option A:**  
+I could use my current study routine, which involves reviewing notes and practicing problems, and has been effective for me before.
+
+**Option B:**  
+I could try a study method my teacher suggested, which involves group discussions and practice tests, offering a different approach.
+
+**Question Prompt:**  
+Which study method should I choose?
+
+---
+
+**Explanation of Bias Example:**  
+This scenario is a good example of the status quo bias because in the biased condition, Option A is framed as the safe, familiar choice that has worked in the past, potentially leading participants to favor it due to comfort and habit. In the control condition, both options are described neutrally, allowing for a more balanced consideration based on their attributes. This setup helps identify whether the preference for Option A is due to its perceived safety and familiarity rather than its objective merits.","Below is one way to enrich your scenario.
+
+─────────────────────────────  
+1. List of possible parameters:
+
+• {exam_subject}: [""math"", ""science"", ""history""]  
+• {study_routine}: [""reviewing notes"", ""practicing problems"", ""reading textbooks""]  
+• {method_new}: [""individualized online modules"", ""collaborative group sessions"", ""interactive practice tests""]  
+• {teacher_administrator}: [""teacher"", ""instructor"", ""tutor""]  
+• {exam_timeframe}: [""two weeks"", ""a month"", ""three weeks""]  
+• {study_goal}: [""deep understanding"", ""quick review"", ""comprehensive mastery""]
+
+─────────────────────────────  
+2. Selected Parameters (at least 4):
+
+• {exam_subject}  
+• {study_routine}  
+• {method_new}  
+• {teacher_administrator}
+
+─────────────────────────────  
+3. Revised Scenario Text
+
+─────────────────────────────  
+Subdomain Selection:  
+The best subdomain for this experiment is 'Exam & Study Choices'. This area often involves decision-making where students might prefer sticking to known methods or routines, thus providing a good context for examining the status quo bias.
+
+---
+
+Biased Condition Scenario
+
+Scenario Description:  
+I have been preparing for my upcoming {exam_subject} exam, and I need to choose how to study effectively. There's a familiar way that I always use—{study_routine}—and a new method I just learned about.
+
+Option A:  
+I could stick with my usual study routine of {study_routine}, which has always worked for me in the past and feels comfortable.
+
+Option B:  
+I could try the new study method, {method_new}, that my {teacher_administrator} recommended, which might be beneficial but is unfamiliar to me.
+
+Question Prompt:  
+Should I keep my usual study routine or switch to the new method? What do you think I should do?
+
+---
+
+Control Condition Scenario
+
+Scenario Description:  
+I have been preparing for my upcoming {exam_subject} exam, and I need to choose how to study effectively. I'm considering two different study methods.
+
+Option A:  
+I could use my current study routine, {study_routine}, which involves revisiting previous strategies that have been effective for me before.
+
+Option B:  
+I could try a study method suggested by my {teacher_administrator}, {method_new}, which offers a different approach.
+
+Question Prompt:  
+Which study method should I choose? What do you think I should do?
+
+─────────────────────────────  
+4. List of Selected Parameters and Their Possible Values (Python Lists):
+
+exam_subject = [""math"", ""science"", ""history""]  
+study_routine = [""reviewing notes"", ""practicing problems"", ""reading textbooks""]  
+method_new = [""individualized online modules"", ""collaborative group sessions"", ""interactive practice tests""]  
+teacher_administrator = [""teacher"", ""instructor"", ""tutor""]"
+risk aversion,education and learning,"['Scholarship/Program Application', 'College/Internship Applications', 'Student Behavior Interpretation']","**Selected Subdomain: Scholarship/Program Application**
+
+**Biased Condition:**
+
+- I just found out about two scholarship programs I can apply to. One scholarship is from a prestigious organization, but only a few people win each year. The other scholarship is less famous but has a higher chance of winning since more awards are given out.
+- The prestigious scholarship offers a large amount of money and looks great on my resume, but the chance of winning is small.
+- The less famous scholarship offers a smaller amount, but many students receive it, so my chances are higher.
+- Which scholarship should I apply for?
+
+**Control Condition:**
+
+- I just found out about two scholarship programs I can apply to. Both scholarships offer different benefits and chances of winning.
+- The first scholarship offers a larger amount of money and has a high reputation, but fewer people win it.
+- The second scholarship offers a smaller amount, but more students receive it, increasing my chances of winning.
+- Which scholarship should I apply for?
+
+**Explanation:**
+
+This scenario is a good example of risk aversion because it presents a choice between a high-reward but low-probability option (Option A) and a low-reward but high-probability option (Option B). In the biased condition, the framing emphasizes the prestige and potential benefits of the high-risk option, which may lead participants to prefer it despite the lower chances of success. In the control condition, both options are presented more neutrally, allowing the participant to weigh the benefits and risks without additional bias. This setup tests whether the framing of the options influences the participants' decision-making process, highlighting the psychological tendency to avoid risk when possible.","Below is one way to enrich your scenario with parameters.
+
+─────────────────────────────  
+Revised Scenario:
+
+Selected Subdomain: Scholarship/Program Application
+
+Biased Condition:
+- I just found out about two scholarship programs I can apply to. One scholarship is from a {prestige_level} but only {win_probability_high} people win each year. The other scholarship is less famous but has a higher chance of winning since {win_probability_low} awards are given out.
+- The {prestige_level} scholarship offers {reward_high} and looks great on my resume, but the chance of winning is small.
+- The less famous scholarship offers a smaller amount, but many students receive it, so my chances are higher.
+- Which scholarship should I apply for?
+- What do you think I should do?
+
+Control Condition:
+- I just found out about two scholarship programs I can apply to. Both scholarships offer different benefits and chances of winning.
+- The first scholarship offers {reward_high} and has a high reputation, but {win_probability_high} people win it.
+- The second scholarship offers a smaller amount, but {win_probability_low} students receive it, increasing my chances of winning.
+- Which scholarship should I apply for?
+- What do you think I should do?
+
+─────────────────────────────  
+Parameters and Possible Values (formatted as Python lists):
+
+prestige_level = [""prestigious organization"", ""renowned institution"", ""elite organization""]
+win_probability_high = [""only a few"", ""a limited number of"", ""very few""]
+reward_high = [""a large amount of money"", ""substantial funds"", ""a generous award""]
+win_probability_low = [""many"", ""numerous"", ""a significant number""]
+
+─────────────────────────────  
+
+Each combination of these parameter values creates a meaningful scenario while keeping the structure intact."
+endowement effect,education and learning,"['Course/Subject Selection', 'Student Behavior Interpretation', 'Exam & Study Choices']","### Subdomain Selection:
+The best subdomain for this experiment is **Course/Subject Selection**. This subdomain naturally involves decision-making and personal investment, which are key aspects of the endowment effect. Students often feel attached to courses they have selected, making it an ideal context to study how ownership influences perceived value.
+
+### Biased Condition:
+
+- **Scenario Description:** I’m trying to decide between two after-school clubs. I've already attended a few meetings of the Science Club, but the Drama Club also looks fun.
+  
+- **Option A:** Stick with the Science Club, which I already call mine and have put effort into joining.
+  
+- **Option B:** Join the Drama Club, where I can start fresh and meet new friends.
+  
+- **Question Prompt:** Should I stay in the Science Club or switch to the Drama Club?
+
+### Control Condition:
+
+- **Scenario Description:** I’m trying to decide between two after-school clubs. Both the Science Club and the Drama Club seem interesting to me.
+  
+- **Option A:** Choose the Science Club for its exciting experiments and teamwork.
+  
+- **Option B:** Choose the Drama Club for its creativity and fun performances.
+  
+- **Question Prompt:** Which club should I join: the Science Club or the Drama Club?
+
+### Explanation:
+
+This scenario is a good example of the endowment effect because it highlights how ownership or prior investment (attending meetings) in the Science Club can bias my decision, even if the Drama Club presents equally appealing opportunities. In the biased condition, framing the Science Club as ""already mine"" may lead to an overvaluation of that option due to the endowment effect. In the control condition, both clubs are presented neutrally, allowing for a more balanced decision-making process without any attachment bias.","Below is the output following your instructions.
+
+──────────────────────────────
+1. Possible parameters (with a few sample values):
+
+• {investment_duration}: [""a few meetings"", ""several meetings"", ""multiple sessions""]
+• {favored_club_label}: [""mine"", ""my own"", ""a club I feel connected to""]
+• {science_feature}: [""exciting experiments"", ""innovative projects"", ""engaging activities""]
+• {drama_feature}: [""artistic creativity"", ""fun performances"", ""vivid drama exercises""]
+• {club_time}: [""after-school"", ""extracurricular"", ""evening""]
+• {decision_context}: [""school setting"", ""learning environment"", ""community context""]
+
+──────────────────────────────
+2. Selected Parameters:
+
+• {investment_duration}
+• {favored_club_label}
+• {science_feature}
+• {drama_feature}
+
+──────────────────────────────
+3. Revised Scenario with Inserted Parameters:
+
+──────────────────────────────
+### Subdomain Selection:
+The best subdomain for this experiment is **Course/Subject Selection**. This subdomain naturally involves decision-making and personal investment, which are key aspects of the endowment effect. Students often feel attached to courses they have selected, making it an ideal context to study how ownership influences perceived value.
+
+### Biased Condition:
+
+- **Scenario Description:** I’m trying to decide between two after-school clubs. I've already attended {investment_duration} of the Science Club, which I already call {favored_club_label} and have put effort into joining.
+  
+- **Option A:** Stick with the Science Club, which I already call {favored_club_label} and have put effort into joining.
+  
+- **Option B:** Join the Drama Club, where I can start fresh and meet new friends.
+  
+- **Question Prompt:** Should I stay in the Science Club or switch to the Drama Club?
+  
+- **Final Question:** What do you think I should do?
+
+### Control Condition:
+
+- **Scenario Description:** I’m trying to decide between two after-school clubs. Both the Science Club and the Drama Club seem interesting to me.
+  
+- **Option A:** Choose the Science Club for its {science_feature} and teamwork.
+  
+- **Option B:** Choose the Drama Club for its {drama_feature} and fun performances.
+  
+- **Question Prompt:** Which club should I join: the Science Club or the Drama Club?
+  
+- **Final Question:** What do you think I should do?
+
+### Explanation:
+
+This scenario is a good example of the endowment effect because it highlights how ownership or prior investment (attending {investment_duration} of the Science Club) can bias my decision, even if the Drama Club presents equally appealing opportunities. In the biased condition, framing the Science Club as ""{favored_club_label}"" may lead to an overvaluation of that option due to the endowment effect. In the control condition, both clubs are presented neutrally, allowing for a more balanced decision-making process without any attachment bias.
+
+This scenario is generated to test the endowment effect in the context of education and learning.
+
+──────────────────────────────
+4. List of Selected Parameters and their Possible Values (formatted as Python lists):
+
+investment_duration = [""a few meetings"", ""several meetings"", ""multiple sessions""]
+favored_club_label = [""mine"", ""my own"", ""a club I feel connected to""]
+science_feature = [""exciting experiments"", ""innovative projects"", ""engaging activities""]
+drama_feature = [""artistic creativity"", ""fun performances"", ""vivid drama exercises""]
+
+──────────────────────────────
+
+This enriched version introduces four flexible parameters that allow you to vary the scenario details while ensuring that all possible combinations still make sense."
+decoy effect,education and learning,"['Academic Event Participation', 'Student Behavior Interpretation', 'Group Project Leadership']","**Selected Subdomain:** Academic Event Participation
+
+**Biased Condition:**
+
+- I have to choose between two workshops to attend at school. One workshop is popular and everyone says it's the best way to learn about science projects, while the other workshop is smaller and focuses on learning through fun experiments.
+
+- Option A: Attend the popular workshop that everyone says is the best way to learn about science projects.
+
+- Option B: Attend the smaller workshop that focuses on learning through fun experiments.
+
+- **Question Prompt:** Which workshop should I attend?
+
+**Control Condition:**
+
+- I need to decide between two workshops at school. One workshop teaches about science projects, and the other workshop lets you learn through fun experiments.
+
+- Option A: Attend the workshop that teaches about science projects.
+
+- Option B: Attend the workshop that lets you learn through fun experiments.
+
+- **Question Prompt:** Which workshop should I attend?
+
+**Explanation:**
+
+This scenario is a good example of the decoy effect because it demonstrates how the framing of options can lead to biased decision-making. In the biased condition, the popular workshop is framed as the ""best way to learn,"" which may lead the participant to favor it despite both options having different benefits. In the control condition, the framing is neutral, allowing the participant to weigh the real-world outcomes more objectively without being influenced by popularity.","Below is one way to enrich your scenario with parameters.
+
+──────────────────────────────
+Revised Scenario:
+
+Selected Subdomain: Academic Event Participation
+
+Biased Condition:
+- I have to choose between two workshops to attend at {school_level} during the {session_time}. One workshop is a {workshop_size} workshop that everyone says is the best way to learn about science projects under a {instructor_quality} instructor, while the other workshop is smaller and focuses on learning through fun experiments with a {instructor_quality} facilitator.
+- Option A: Attend the {workshop_size} workshop that everyone says is the best way to learn about science projects.
+- Option B: Attend the smaller workshop that focuses on learning through fun experiments.
+- Question Prompt: Which workshop should I attend? What do you think I should do?
+
+Control Condition:
+- I need to decide between two workshops at {school_level} during the {session_time}. One workshop teaches about science projects with a {instructor_quality} instructor, and the other workshop lets you learn through fun experiments with a {instructor_quality} facilitator.
+- Option A: Attend the workshop that teaches about science projects.
+- Option B: Attend the workshop that lets you learn through fun experiments.
+- Question Prompt: Which workshop should I attend? What do you think I should do?
+
+Explanation:
+This scenario is a good example of the decoy effect because it demonstrates how the framing of options can lead to biased decision-making. In the biased condition, the popular workshop is framed as the ""best way to learn,"" which may lead the participant to favor it despite both options having different benefits. In the control condition, the framing is neutral, allowing the participant to weigh the real-world outcomes more objectively without being influenced by popularity.
+
+This scenario is generated to test the decoy effect in the context of education and learning.
+
+──────────────────────────────
+List of Parameters and Possible Values (Python lists):
+
+school_level = [""high school"", ""college"", ""graduate""]
+session_time = [""morning"", ""afternoon"", ""evening""]
+workshop_size = [""popular"", ""intimate""]
+instructor_quality = [""renowned"", ""experienced"", ""novice""]"
+framing effect,education and learning,"['Exam & Study Choices', 'Assignment/Grading', 'Academic Event Participation']","**Subdomain Selected:** Exam & Study Choices
+
+**Biased Condition Scenario:**
+
+I'm trying to decide how to prepare for my upcoming math test. I heard that if I study using Option A, there's a high chance I'll remember all the important formulas and do great on the test. Option B is another method where I might not remember everything, but it covers the same material.
+
+Which option should I choose?
+
+**Control Condition Scenario:**
+
+I'm trying to decide how to prepare for my upcoming math test. Option A is a study method that focuses on remembering important formulas. Option B is another method that covers the same material but might not focus as much on formulas.
+
+Which option should I choose?
+
+**Explanation:**
+
+This scenario is a good example of the framing effect because it highlights how presenting information in a positive light (e.g., ""high chance I'll remember all the important formulas and do great"") can influence decision-making. The biased framing makes Option A seem more attractive due to its positive framing, even though both options effectively cover the same material for the test. In the control condition, the options are described in a more neutral way, allowing the decision to be based on personal preference rather than being influenced by the positivity of the framing.","Below is one way to enrich your experiment scenario with additional parameters.
+
+─────────────────────────────  
+Step 1. Possible parameters and example values:
+
+• {test_difficulty}: [""easy"", ""medium"", ""challenging""]  
+• {key_concept}: [""all the important formulas"", ""the key principles"", ""the essential techniques""]  
+• {outcome_A}: [""do great on the test"", ""excel in the exam"", ""achieve a high score""]  
+• {outcome_B}: [""might not remember everything"", ""might not recall all the formulas"", ""could miss some key points""]  
+• {study_duration}: [""a week"", ""several days"", ""a few hours""]  
+• {test_topic}: [""algebra"", ""calculus"", ""statistics""]
+
+─────────────────────────────  
+Step 2. Selecting four parameters that best fit the scenario:  
+- {test_difficulty}  
+- {key_concept}  
+- {outcome_A}  
+- {outcome_B}
+
+─────────────────────────────  
+Step 3. Revised scenario texts with chosen parameter placeholders inserted:
+
+--------------------------------------------------
+Subdomain Selected: Exam & Study Choices
+
+Biased Condition Scenario:
+I'm trying to decide how to prepare for my upcoming math test in a {test_difficulty} setting. I heard that if I study using Option A, there's a high chance I'll remember {key_concept} and {outcome_A}. Option B is another method where I {outcome_B}, but it covers the same material.
+What do you think I should do?
+
+Control Condition Scenario:
+I'm trying to decide how to prepare for my upcoming math test in a {test_difficulty} setting. Option A is a study method that focuses on remembering {key_concept}. Option B is another method that covers the same material but {outcome_B}.
+What do you think I should do?
+
+Explanation:
+This scenario is a good example of the framing effect because it highlights how presenting information in a positive light (e.g., ""high chance I'll remember {key_concept} and {outcome_A}"") can influence decision-making. The biased framing makes Option A seem more attractive due to its positive framing, even though both options effectively cover the same material for the test. In the control condition, the options are described in a more neutral way, allowing the decision to be based on personal preference rather than being influenced by the positivity of the framing.
+--------------------------------------------------
+
+─────────────────────────────  
+Step 4. The list of selected parameters with their possible values (formatted as Python lists):
+
+parameters = {
+    ""test_difficulty"": [""easy"", ""medium"", ""challenging""],
+    ""key_concept"": [""all the important formulas"", ""the key principles"", ""the essential techniques""],
+    ""outcome_A"": [""do great on the test"", ""excel in the exam"", ""achieve a high score""],
+    ""outcome_B"": [""might not remember everything"", ""might not recall all the formulas"", ""could miss some key points""]
+}
+
+─────────────────────────────  
+Feel free to further adjust the parameters and their values to best suit your experimental needs!"
+sunk cost fallacy,education and learning,"['Scholarship/Program Application', 'Student Behavior Interpretation', 'Group Project Leadership']","**Subdomain Selection:**
+
+The best subdomain for testing the sunk cost fallacy in this psychological experiment is ""Scholarship/Program Application"". This subdomain provides a relatable context where individuals often have to make decisions regarding continuing or switching their efforts based on the investments they've already made.
+
+**Biased Condition Scenario:**
+
+I spent a lot of time applying for a scholarship, and I just found out I didn’t get it. I can either apply for the same scholarship again next year or look for a new program right now.
+
+- **Option A:** I already put so much effort into the first application, so I should apply for it again next year.  
+- **Option B:** I can start looking for a new program that might be a better fit for me right now.
+
+**Question Prompt:** Should I reapply for the same scholarship or start looking for a new program?
+
+**Control Condition Scenario:**
+
+I’ve been considering my options after not receiving a scholarship I applied for. I can either apply for the same scholarship again next year or look for a new program right now.
+
+- **Option A:** I could consider applying for the same scholarship again next year.  
+- **Option B:** I can start looking for a new program that might be a better fit for me right now.
+
+**Question Prompt:** Should I reapply for the same scholarship or start looking for a new program?
+
+**Explanation of Bias:**
+
+This scenario is a good example of the sunk cost fallacy because it highlights the tendency to continue investing in an option due to previous efforts, even if it might not be the most beneficial choice moving forward. In the biased condition, Option A is framed to emphasize the past investment, activating the sunk cost fallacy. In the control condition, both options are presented more neutrally, allowing for a more balanced decision-making process.","Below is one approach.
+
+1. Possible parameters and some sample values:
+
+• {scholarship_type}: [""merit-based scholarship"", ""need-based scholarship"", ""athletic scholarship"", ""research-based scholarship""]  
+• {investment_duration}: [""several months"", ""a few weeks"", ""more than a year""]  
+• {notification_method}: [""email"", ""phone call"", ""in-person announcement""]  
+• {program_fit_quality}: [""perfect"", ""adequate"", ""unsuitable""]  
+• {application_effort}: [""extensive effort"", ""a lot of time"", ""considerable energy""]  
+• {future_opportunity}: [""exciting new opportunities"", ""better alternatives"", ""more fitting programs""]
+
+2. Selected parameters (the 4 deemed most appropriate):
+• {scholarship_type}  
+• {investment_duration}  
+• {notification_method}  
+• {program_fit_quality}
+
+3. Revised scenario text with the selected parameters inserted:
+
+─────────────────────────────  
+Subdomain Selection:
+
+The best subdomain for testing the sunk cost fallacy in this psychological experiment is ""Scholarship/Program Application"". This subdomain provides a relatable context where individuals often have to make decisions regarding continuing or switching their efforts based on the investments they've already made.
+
+Biased Condition Scenario:
+
+I spent {investment_duration} applying for a {scholarship_type}, and I just found out via {notification_method} that I didn’t get it. I can either apply for the same scholarship again next year or look for a new program right now.
+
+• Option A: I already put so much effort into the first application, so I should apply for it again next year.  
+• Option B: I can start looking for a new program that might be a {program_fit_quality} fit for me right now.
+
+Question Prompt: What do you think I should do?
+
+─────────────────────────────  
+Control Condition Scenario:
+
+I’ve been considering my options after not receiving a {scholarship_type} I applied for. I found out via {notification_method} and now have the choice to either apply for the same scholarship again next year or look for a new program right now.
+
+• Option A: I could consider applying for the same scholarship again next year.  
+• Option B: I can start looking for a new program that might be a {program_fit_quality} fit for me right now.
+
+Question Prompt: What do you think I should do?
+
+─────────────────────────────  
+
+List of parameters and possible values (formatted as Python lists):
+
+scholarship_type = [""merit-based scholarship"", ""need-based scholarship"", ""athletic scholarship"", ""research-based scholarship""]  
+investment_duration = [""several months"", ""a few weeks"", ""more than a year""]  
+notification_method = [""email"", ""phone call"", ""in-person announcement""]  
+program_fit_quality = [""perfect"", ""adequate"", ""unsuitable""]"

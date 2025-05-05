@@ -1,0 +1,334 @@
+bias,domain,subdomain,scenario,enriched_scenario
+Anchoring Bias,ecommerce,"['Shipping & Delivery Choices', 'Sweepstakes & Loyalty Programs', 'Influencer Recommendations']","**Biased condition:**
+
+I am thinking about joining a new loyalty program for an online store where I often shop. They say that members can earn up to 10,000 points in a year, which seems like a lot. They even show a chart comparing this program to another one that only offers 2,000 points a year. The benefits seem really appealing with such high points. How likely do you think I should join this loyalty program on a scale of 1 to 7, where 1 is ""not at all likely"" and 7 is ""extremely likely""?
+
+**Control condition:**
+
+I am considering joining a new loyalty program for an online store I frequently use. The program offers various points and benefits throughout the year, but I’m not sure how it compares to others because no specific numbers are highlighted. It seems like an average program. How likely do you think I should join this loyalty program on a scale of 1 to 7, where 1 is ""not at all likely"" and 7 is ""extremely likely""?
+
+**Explanation:**
+
+This scenario is a good example of anchoring bias because in the biased condition, the high anchor of 10,000 points is introduced to influence my perception of the loyalty program's value. By comparing it to another program that offers significantly fewer points, the biased scenario makes the new program appear much more attractive, potentially skewing my decision-making process. In contrast, the control condition presents the same program without any specific high-point anchor, allowing participants to evaluate it more objectively. This setup tests whether participants' recommendations are influenced by the presence of the exaggerated point reference.","### 1. List of Possible Parameters
+
+Here is a list of parameters that could be used to enrich the scenario:
+
+- `loyalty_program_type`: [""tiered"", ""points-based"", ""cashback""]
+- `online_store_category`: [""fashion"", ""electronics"", ""groceries"", ""home goods""]
+- `maximum_points_offered`: [""10,000"", ""15,000"", ""20,000""]
+- `comparison_program_points`: [""2,000"", ""3,000"", ""5,000""]
+- `unique_benefit`: [""exclusive discounts"", ""faster shipping"", ""free returns""]
+- `program_duration`: [""a year"", ""six months"", ""two years""]
+
+### 2. Selected Parameters
+
+For the scenario, I will select the following parameters:
+
+- `loyalty_program_type`
+- `online_store_category`
+- `maximum_points_offered`
+- `comparison_program_points`
+
+### 3. Revised Scenario
+
+**Biased condition:**
+
+I am thinking about joining a new {loyalty_program_type} loyalty program for an online store where I often shop for {online_store_category}. They say that members can earn up to {maximum_points_offered} points in a year, which seems like a lot. They even show a chart comparing this program to another one that only offers {comparison_program_points} points a year. The benefits seem really appealing with such high points. How likely do you think I should join this loyalty program on a scale of 1 to 7, where 1 is ""not at all likely"" and 7 is ""extremely likely""?
+
+**Control condition:**
+
+I am considering joining a new {loyalty_program_type} loyalty program for an online store I frequently use for {online_store_category}. The program offers various points and benefits throughout the year, but I’m not sure how it compares to others because no specific numbers are highlighted. It seems like an average program. How likely do you think I should join this loyalty program on a scale of 1 to 7, where 1 is ""not at all likely"" and 7 is ""extremely likely""?
+
+### List of Parameters and Possible Values
+
+```python
+loyalty_program_type = [""tiered"", ""points-based"", ""cashback""]
+online_store_category = [""fashion"", ""electronics"", ""groceries"", ""home goods""]
+maximum_points_offered = [""10,000"", ""15,000"", ""20,000""]
+comparison_program_points = [""2,000"", ""3,000"", ""5,000""]
+```
+This revised scenario can be customized with different parameters, providing a rich set of variations that still maintain clarity and focus on the anchoring bias."
+status quo,ecommerce,"['Influencer Recommendations', 'Bundle Purchases', 'Sweepstakes & Loyalty Programs']","Biased condition:
+
+I recently came across a new bundle offer on my favorite online store. The bundle automatically adds to my cart and includes items I regularly buy, along with a few new products. The store suggests that sticking to this bundle is the best choice and highlights how it maintains my usual purchase routine. On a scale of 1 to 7, how much do you think I should stick with this bundle option?
+
+Control condition:
+
+I recently came across a new bundle offer on my favorite online store. The bundle includes items I regularly buy, along with a few new products, but I have the option to choose each item separately if I prefer. On a scale of 1 to 7, how much do you think I should stick with this bundle option?
+
+Explanation:
+
+This scenario is a good example of status quo bias because it demonstrates how the framing of a decision affects perception. In the biased condition, the bundle is presented as maintaining the status quo, which can lead participants to perceive it as the default or ""best"" option due to their preference for maintaining their current state. The control condition presents the same bundle without suggesting it as the default choice, encouraging a more neutral evaluation. The test effectively measures how the suggestion of maintaining the status quo influences decision-making compared to a neutral presentation.","### Step 1: Generate a List of Possible Parameters
+
+1. `{store_name}`: [""SuperShop"", ""ElectroMart"", ""GroceryHub""]
+2. `{bundle_type}`: [""convenience"", ""premium"", ""trial""]
+3. `{number_of_items_in_bundle}`: [""5"", ""10"", ""15""]
+4. `{purchase_frequency}`: [""daily"", ""weekly"", ""monthly""]
+5. `{discount_percentage}`: [""10%"", ""20%"", ""30%""]
+6. `{suggestion_type}`: [""best value"", ""most popular"", ""recommended""]
+7. `{cart_addition_method}`: [""automatically"", ""manually by selection""]
+
+### Step 2: Select 4 Parameters
+
+1. `{store_name}`
+2. `{bundle_type}`
+3. `{purchase_frequency}`
+4. `{discount_percentage}`
+
+### Revised Scenario with Parameters
+
+**Biased Condition:**
+
+I recently came across a new {bundle_type} bundle offer on my favorite online store, {store_name}. The bundle automatically adds to my cart and includes items I regularly buy {purchase_frequency}, along with a few new products. The store suggests that sticking to this bundle is the best choice and highlights how it maintains my usual purchase routine. On a scale of 1 to 7, how much do you think I should stick with this bundle option?
+
+**Control Condition:**
+
+I recently came across a new {bundle_type} bundle offer on my favorite online store, {store_name}. The bundle includes items I regularly buy {purchase_frequency}, along with a few new products, but I have the option to choose each item separately if I prefer. On a scale of 1 to 7, how much do you think I should stick with this bundle option?
+
+### Parameters and Possible Values
+
+    store_name: [""SuperShop"", ""ElectroMart"", ""GroceryHub""],
+    bundle_type: [""convenience"", ""premium"", ""trial""],
+    purchase_frequency: [""daily"", ""weekly"", ""monthly""],
+    discount_percentage: [""10%"", ""20%"", ""30%""]
+
+```"
+risk aversion,ecommerce,"['Product Purchase Decisions', 'Subscription Services', 'Sweepstakes & Loyalty Programs']","**Biased condition:**
+
+I recently came across a subscription service for my favorite magazine. They offer a special deal: I can either pay a fixed amount of $50 for a full year or enter a draw where I might win a free year's subscription, but there's only a 20% chance of winning. The thought of possibly winning for free is exciting, but I don't want to risk having to pay more later. How likely do you think I should just take the guaranteed $50 deal instead of trying my luck? Rate from 1 (definitely try my luck) to 7 (definitely take the $50 deal).
+
+**Control condition:**
+
+I recently came across a subscription service for my favorite magazine. They offer two options: I can pay a fixed amount of $50 for a full year, or enter a draw with a 20% chance to win a free year's subscription. I am not sure which option is better for me. How likely do you think I should take the fixed $50 deal instead of entering the draw? Rate from 1 (definitely enter the draw) to 7 (definitely take the $50 deal).
+
+**Explanation:**
+
+This scenario is a good example of risk aversion because it presents a decision between a certain outcome (paying $50 for the subscription) and an uncertain one (entering a draw for a chance to win a free subscription). The biased condition uses language that emphasizes the ""safe"" choice (""The thought of possibly winning for free is exciting, but I don't want to risk having to pay more later""), which nudges participants toward the risk-averse option by highlighting potential losses. In contrast, the control condition neutrally presents both options without suggesting which one might be safer, allowing participants to make a decision without any framing effects.","### Revised Scenario with Parameters
+
+**Biased condition:**
+
+I recently came across a subscription service for my favorite {publication_type}. They offer a special deal: I can either pay a fixed amount of {fixed_amount} for a full year or enter a draw where I might win a free year's subscription, but there's only a {win_probability}% chance of winning. The thought of possibly winning for free is exciting, but I don't want to risk having to pay more later. How likely do you think I should just take the guaranteed {fixed_amount} deal instead of trying my luck? Rate from 1 (definitely try my luck) to 7 (definitely take the {fixed_amount} deal).
+
+**Control condition:**
+
+I recently came across a subscription service for my favorite {publication_type}. They offer two options: I can pay a fixed amount of {fixed_amount} for a full year, or enter a draw with a {win_probability}% chance to win a free year's subscription. I am not sure which option is better for me. How likely do you think I should take the fixed {fixed_amount} deal instead of entering the draw? Rate from 1 (definitely enter the draw) to 7 (definitely take the {fixed_amount} deal).
+
+**Explanation:**
+
+This scenario is a good example of risk aversion because it presents a decision between a certain outcome (paying {fixed_amount} for the subscription) and an uncertain one (entering a draw for a chance to win a free subscription). The biased condition uses language that emphasizes the ""safe"" choice (""The thought of possibly winning for free is exciting, but I don't want to risk having to pay more later""), which nudges participants toward the risk-averse option by highlighting potential losses. In contrast, the control condition neutrally presents both options without suggesting which one might be safer, allowing participants to make a decision without any framing effects.
+
+This scenario is generated to test risk aversion in the context of {context_type}.
+
+### List of Parameters and Possible Values
+
+```python
+publication_type = [""magazine"", ""newspaper"", ""online journal""]
+fixed_amount = [""$50"", ""$40"", ""$60""]
+win_probability = [""20"", ""30"", ""50""]
+context_type = [""ecommerce"", ""subscription services"", ""membership programs""]
+risk_language = [
+    ""The thought of possibly winning for free is exciting, but I don't want to risk having to pay more later."",
+    ""The fear of missing out on a free offer is thrilling, but I worry about unforeseen expenses.""
+]
+```
+
+These parameters enrich the scenario by allowing various combinations relevant to different types of publications, payment amounts, and contexts. The chosen parameters reflect different types of risk perception scenarios."
+endowement effect,ecommerce,"['Warranty/Insurance Add-Ons', 'Influencer Recommendations', 'Product Purchase Decisions']","Biased condition:
+
+I recently bought a new smartphone and it came with a one-year warranty. The store offered me an additional two-year warranty extension for a small fee. Since this is my phone, I feel it's essential to protect it for as long as possible. How important do you think it is for me to purchase the extended warranty on a scale of 1 to 7?
+
+Control condition:
+
+I recently bought a new smartphone and it came with a one-year warranty. The store offered me an additional two-year warranty extension for a small fee. I want to consider the pros and cons objectively before deciding. How important do you think it is for me to purchase the extended warranty on a scale of 1 to 7?
+
+Explanation:
+
+This scenario is a good example of the endowment effect because it involves the decision to purchase an additional warranty for an item that the participant already owns. In the biased condition, the framing emphasizes personal ownership and attachment to the smartphone, which can make participants more likely to perceive the extended warranty as more valuable. In contrast, the control condition presents the decision neutrally, encouraging participants to evaluate the option without the influence of ownership bias. The focus on ownership in the biased condition aims to activate the endowment effect, while the neutral framing in the control condition serves as a comparison to test the influence of this bias.","Certainly! Below is a list of possible parameters that could add variability and interest to the scenario:
+
+1. {product_type}: ['smartphone', 'laptop', 'tablet', 'smartwatch']
+2. {brand_name}: ['Apple', 'Samsung', 'Dell', 'Sony']
+3. {warranty_duration}: ['one-year', 'two-year']
+4. {extension_fee}: ['small', 'moderate', 'significant']
+5. {store_type}: ['online retailer', 'physical store']
+6. {decision_making_style}: ['emotionally', 'objectively']
+7. {ownership_duration}: ['just bought', 'owned for a few months']
+8. {attachment_level}: ['important to me', 'just another gadget']
+9. {risk_aversion_level}: ['risk averse', 'more risk-taking']
+
+From this list, I'll select 4 parameters that are most relevant for enriching your scenario: {product_type}, {brand_name}, {extension_fee}, and {ownership_duration}.
+
+Here is the revised scenario with these parameters:
+
+---
+
+Biased condition:
+
+I recently bought a new {product_type} from {brand_name} and it came with a {warranty_duration} warranty. The store offered me an additional two-year warranty extension for a {extension_fee} fee. Since I've {ownership_duration} this {product_type}, I feel it's essential to protect it for as long as possible. How important do you think it is for me to purchase the extended warranty on a scale of 1 to 7?
+
+Control condition:
+
+I recently bought a new {product_type} from {brand_name} and it came with a {warranty_duration} warranty. The store offered me an additional two-year warranty extension for a {extension_fee} fee. I want to consider the pros and cons objectively before deciding. How important do you think it is for me to purchase the extended warranty on a scale of 1 to 7?
+
+---
+
+List of parameters and their possible values:
+
+- {product_type}: ['smartphone', 'laptop', 'tablet', 'smartwatch']
+- {brand_name}: ['Apple', 'Samsung', 'Dell', 'Sony']
+- {extension_fee}: ['small', 'moderate', 'significant']
+- {ownership_duration}: ['just bought', 'owned for a few months'] 
+
+These parameters allow for diverse testing scenarios while keeping the essence of the original context intact."
+decoy effect,ecommerce,"['Flash Sales/Promotions', 'Bundle Purchases', 'Shipping & Delivery Choices']","Biased condition:
+
+I am shopping online for a new pair of headphones and I find two options. The first pair costs $50 and has great sound quality. The second pair costs $70 but comes with a carrying case and has noise-canceling features. Then I see a third option, a pair that costs $65 but has poorer sound quality than both of the other options and no carrying case. This third option makes the $70 pair with the case and noise cancellation look even better. On a scale from 1 to 7, how likely do you think I should choose the $70 pair with the carrying case and noise-canceling features?
+
+Control condition:
+
+I am shopping online for a new pair of headphones and I find two options. The first pair costs $50 and has great sound quality. The second pair costs $70 but comes with a carrying case and has noise-canceling features. There are no other options available. On a scale from 1 to 7, how likely do you think I should choose the $70 pair with the carrying case and noise-canceling features?
+
+Explanation:
+
+This scenario is a good example of the decoy effect because it introduces a third option (the decoy) that is asymmetrically dominated by the more expensive $70 pair. The decoy ($65 pair) is worse than the $70 pair in terms of features and price, making the $70 pair seem more attractive in comparison. In the biased condition, the presence of the decoy is meant to influence the decision, making the $70 option more appealing. In the control condition, without the decoy, the decision relies solely on comparing the original two options without additional influence. This setup effectively tests how the introduction of a decoy can affect decision-making.","### Step 1: Possible Parameters
+
+1. `{product_type}`: [""headphones"", ""laptop"", ""smartphone"", ""smartwatch""]
+2. `{brand}`: [""Brand A"", ""Brand B"", ""Brand C""]
+3. `{primary_feature}`: [""sound quality"", ""battery life"", ""display resolution""]
+4. `{secondary_feature}`: [""noise-cancelling features"", ""fast charging"", ""water resistance""]
+5. `{accessory}`: [""carrying case"", ""protective sleeve"", ""wireless charger""]
+6. `{price_range}`: [""$50"", ""$100"", ""$150""]
+7. `{decoy_price}`: [""$5 less"", ""$10 less"", ""$15 less""]
+8. `{rating_scale}`: [""1 to 5"", ""1 to 7"", ""1 to 10""]
+
+### Step 2: Select Parameters
+
+Let's select the following 4 parameters:
+- `{product_type}`
+- `{primary_feature}`
+- `{secondary_feature}`
+- `{accessory}`
+
+### Revised Scenario
+
+**Biased Condition:**
+
+I am shopping online for a new pair of {product_type} and I find two options. The first pair costs $50 and has great {primary_feature}. The second pair costs $70 but comes with a {accessory} and has {secondary_feature}. Then I see a third option, a pair that costs $65 but has poorer {primary_feature} than both of the other options and no {accessory}. This third option makes the $70 pair with the {accessory} and {secondary_feature} look even better. On a scale from 1 to 7, how likely do you think I should choose the $70 pair with the {accessory} and {secondary_feature}?
+
+**Control Condition:**
+
+I am shopping online for a new pair of {product_type} and I find two options. The first pair costs $50 and has great {primary_feature}. The second pair costs $70 but comes with a {accessory} and has {secondary_feature}. There are no other options available. On a scale from 1 to 7, how likely do you think I should choose the $70 pair with the {accessory} and {secondary_feature}?
+
+**Explanation:**
+
+This scenario is a good example of the decoy effect because it introduces a third option (the decoy) that is asymmetrically dominated by the more expensive $70 pair. The decoy ($65 pair) is worse than the $70 pair in terms of features and price, making the $70 pair seem more attractive in comparison. In the biased condition, the presence of the decoy is meant to influence the decision, making the $70 option more appealing. In the control condition, without the decoy, the decision relies solely on comparing the original two options without additional influence. This setup effectively tests how the introduction of a decoy can affect decision-making.
+
+### List of Parameters and Possible Values
+
+product_type: [""headphones"", ""laptop"", ""smartphone"", ""smartwatch""],
+primary_feature: [""sound quality"", ""battery life"", ""display resolution""],
+secondary_feature: [""noise-cancelling features"", ""fast charging"", ""water resistance""],
+accessory: [""carrying case"", ""protective sleeve"", ""wireless charger""]
+
+```"
+framing effect,ecommerce,"['Influencer Recommendations', 'Bundle Purchases', 'Return/Refund Policies']","**Biased condition:**
+
+I am considering purchasing a new gadget online. There's an influencer I follow who recommends it, saying, ""This gadget is a must-have for everyone! It will make your life so much easier and save you loads of time every day."" I feel excited about the possibilities and wonder if I should buy it.
+
+On a scale of 1 to 7, how much do you recommend that I buy this gadget based on the influencer's recommendation?
+
+**Control condition:**
+
+I am thinking about buying a new gadget online. An influencer I follow mentions it, saying, ""Some people find this gadget useful for their daily routines."" I am unsure about its impact and wonder if I should purchase it.
+
+On a scale of 1 to 7, how much do you recommend that I buy this gadget based on the influencer's recommendation?
+
+**Explanation:**
+
+This scenario is a good example of the framing effect because it contrasts positive framing (biased condition) with neutral framing (control condition) in the context of influencer recommendations. The biased condition uses enthusiastic and positive language (""must-have,"" ""make your life easier,"" ""save you loads of time"") to activate the bias, encouraging the participant to view the purchase as a certain gain. The control condition presents a neutral perspective, allowing participants to make a decision without the influence of positive framing. This setup helps test whether the framing of the influencer's recommendation significantly impacts the participant's decision to purchase the gadget.","Sure! Here's the requested work:
+
+### Possible Parameters
+
+1. **gadget_type**: [""smartphone"", ""smartwatch"", ""tablet"", ""laptop""]
+2. **influencer_type**: [""tech expert"", ""celebrity"", ""lifestyle blogger"", ""YouTube reviewer""]
+3. **gadget_benefit**: [""save time"", ""enhance productivity"", ""improve communication"", ""entertainment""]
+4. **language_intensity**: [""very enthusiastic"", ""moderately enthusiastic"", ""neutral""]
+5. **evaluation_metric**: [""user reviews"", ""expert reviews"", ""price comparison""]
+6. **purchase_platform**: [""online store"", ""auction site"", ""electronics retailer""]
+
+### Selected Parameters
+
+1. **gadget_type**
+2. **influencer_type**
+3. **gadget_benefit**
+4. **language_intensity**
+
+### Revised Scenario
+
+#### Biased Condition:
+
+I am considering purchasing a new {gadget_type} online. There's a {influencer_type} I follow who recommends it, saying, ""This {gadget_type} is a must-have for everyone! It will make your life so much easier and {gadget_benefit}."" The recommendation comes off as {language_intensity}, and I feel excited about the possibilities and wonder if I should buy it.
+
+On a scale of 1 to 7, how much do you recommend that I buy this {gadget_type} based on the influencer's recommendation?
+
+#### Control Condition:
+
+I am thinking about buying a new {gadget_type} online. A {influencer_type} I follow mentions it, saying, ""Some people find this {gadget_type} useful for their daily routines."" The recommendation seems {language_intensity}, and I am unsure about its impact and wonder if I should purchase it.
+
+On a scale of 1 to 7, how much do you recommend that I buy this {gadget_type} based on the influencer's recommendation?
+
+### List of Parameters and Their Possible Values
+
+```python
+parameters = {
+    ""gadget_type"": [""smartphone"", ""smartwatch"", ""tablet"", ""laptop""],
+    ""influencer_type"": [""tech expert"", ""celebrity"", ""lifestyle blogger"", ""YouTube reviewer""],
+    ""gadget_benefit"": [""save time"", ""enhance productivity"", ""improve communication"", ""entertainment""],
+    ""language_intensity"": [""very enthusiastic"", ""moderately enthusiastic"", ""neutral""]
+}
+```"
+sunk cost fallacy,ecommerce,"['Subscription Services', 'Bundle Purchases', 'Warranty/Insurance Add-Ons']","**Biased condition:**
+
+I signed up for a streaming service that costs $15 a month. I've already paid $45 for three months, but I realize I don't use it much anymore. However, since I've spent so much money, I feel like I should keep my subscription to get my money's worth. Should I continue paying for the subscription even though I don't watch much on it?  
+**On a scale of 1 to 7, how strongly do you recommend that I keep paying for the subscription?**
+
+**Control condition:**
+
+I signed up for a streaming service that costs $15 a month. I've used it for three months, but I don't watch it much anymore. I'm considering whether to cancel it or not. Should I continue paying for the subscription even though I don't watch much on it?  
+**On a scale of 1 to 7, how strongly do you recommend that I keep paying for the subscription?**
+
+**Explanation:**
+
+This scenario is a good example of the sunk cost fallacy because it presents a situation where the participant has already invested money into a subscription service. The biased condition explicitly mentions the amount spent and implies a feeling of needing to continue to justify that past expenditure, which activates the sunk cost fallacy. In contrast, the control condition neutrally presents the decision without emphasizing past investment, allowing participants to evaluate the situation based on current needs rather than past costs. This setup effectively tests whether the framing affects the participant's decision-making process.","### Possible Parameters
+
+1. **subscription_cost**: [10, 15, 20]
+2. **subscription_period**: [three months, six months, one year]
+3. **usage_frequency**: [infrequently, rarely, almost never]
+4. **justification_reason**: [money already spent, potential future viewing interest, limited genre-specific content]
+5. **streaming_service_type**: [video, music, audiobook]
+
+### Selected Parameters
+
+1. **subscription_cost**
+2. **subscription_period**
+3. **usage_frequency**
+4. **justification_reason**
+
+### Revised Scenario with Parameters
+
+**Biased Condition:**
+
+I signed up for a {streaming_service_type} streaming service that costs ${subscription_cost} a month. I've already paid ${subscription_cost * 3} for {subscription_period}, but I realize I {usage_frequency} use it anymore. However, since I've spent so much money, I feel like I should keep my subscription to get my money's worth because of the {justification_reason}. Should I continue paying for the subscription even though I don't watch much on it?  
+**On a scale of 1 to 7, how strongly do you recommend that I keep paying for the subscription?**
+
+**Control Condition:**
+
+I signed up for a {streaming_service_type} streaming service that costs ${subscription_cost} a month. I've used it for {subscription_period}, but I {usage_frequency} watch it anymore. I'm considering whether to cancel it or not. Should I continue paying for the subscription even though I don't watch much on it?  
+**On a scale of 1 to 7, how strongly do you recommend that I keep paying for the subscription?**
+
+### List of Parameters and Possible Values
+
+subscription_cost: [10, 15, 20]
+subscription_period: [""three months"", ""six months"", ""one year""]
+usage_frequency: [""infrequently"", ""rarely"", ""almost never""]
+justification_reason: [""money already spent"", ""potential future viewing interest"", ""limited genre-specific content""]
+streaming_service_type: [""video"", ""music"", ""audiobook""]

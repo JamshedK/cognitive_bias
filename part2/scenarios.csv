@@ -1,0 +1,373 @@
+bias,domain,subdomain,scenario,enriched_scenario
+Anchoring Bias,education and learning,"['Course/Subject Selection', 'College/Internship Applications', 'Academic Event Participation']","**Biased condition:**
+
+I am considering signing up for a science workshop at school. The last time a similar workshop was held, 90% of the participants said it was the best educational experience they ever had. The workshop costs $30, which seems like a great deal compared to another workshop that costs $100. Should I sign up for the science workshop? Please rate your recommendation on a scale of 1 to 7, where 1 means ""definitely not"" and 7 means ""definitely yes.""
+
+**Control condition:**
+
+I am considering signing up for a science workshop at school. The workshop is designed to help students learn more about science through interactive activities. The cost of the workshop is $30. Should I sign up for the science workshop? Please rate your recommendation on a scale of 1 to 7, where 1 means ""definitely not"" and 7 means ""definitely yes.""
+
+**Explanation:**
+
+This scenario is a good example of anchoring bias because, in the biased condition, the participant is influenced by the anchor of the previous workshop's high satisfaction rate and the comparison to a more expensive workshop. These anchors are likely to skew the participant's judgment towards recommending signing up for the workshop. In contrast, the control condition presents the same situation without these anchors, allowing for a more neutral assessment of the decision. By comparing the responses from both conditions, the experiment can reveal the impact of anchoring on decision-making in educational contexts.","### List of Possible Parameters
+
+1. **workshop_subject**: [""science"", ""math"", ""technology""]
+2. **satisfaction_rate**: [""70%"", ""80%"", ""90%"", ""95%""]
+3. **workshop_cost**: [""$20"", ""$30"", ""$50""]
+4. **comparison_workshop_cost**: [""$75"", ""$100"", ""$120""]
+5. **workshop_duration**: [""one day"", ""two days"", ""a week""]
+6. **school_type**: [""high school"", ""university"", ""middle school""]
+7. **learning_method**: [""through interactive activities"", ""through lectures"", ""through group projects""]
+8. **participant_feedback**: [""the best educational experience"", ""very insightful"", ""moderately helpful""]
+
+### Selected Parameters
+
+1. **workshop_subject**
+2. **satisfaction_rate**
+3. **workshop_cost**
+4. **comparison_workshop_cost**
+
+### Revised Scenario
+
+**Biased condition:**
+
+I am considering signing up for a {workshop_subject} workshop at school. The last time a similar workshop was held, {satisfaction_rate} of the participants said it was {participant_feedback} they ever had. The workshop costs {workshop_cost}, which seems like a great deal compared to another workshop that costs {comparison_workshop_cost}. Should I sign up for the {workshop_subject} workshop? Please rate your recommendation on a scale of 1 to 7, where 1 means ""definitely not"" and 7 means ""definitely yes.""
+
+**Control condition:**
+
+I am considering signing up for a {workshop_subject} workshop at school. The workshop is designed to help students learn more about {workshop_subject} {learning_method}. The cost of the workshop is {workshop_cost}. Should I sign up for the {workshop_subject} workshop? Please rate your recommendation on a scale of 1 to 7, where 1 means ""definitely not"" and 7 means ""definitely yes.""
+
+### Parameters with Possible Values
+
+```python
+workshop_subject = [""science"", ""math"", ""technology""]
+satisfaction_rate = [""70%"", ""80%"", ""90%"", ""95%""]
+workshop_cost = [""$20"", ""$30"", ""$50""]
+comparison_workshop_cost = [""$75"", ""$100"", ""$120""]
+participant_feedback = [""the best educational experience"", ""very insightful"", ""moderately helpful""]
+learning_method = [""through interactive activities"", ""through lectures"", ""through group projects""]
+```"
+status quo,education and learning,"['College/Internship Applications', 'Assignment/Grading', 'Course/Subject Selection']","**Biased condition:**
+
+I have always taken math classes since I started school, and I'm considering my courses for next semester. My advisor says I should stick with math because it's what I've always done and changing could be risky. They mention that continuing with math is the safest choice since it's what I'm used to. How strongly do you think I should follow my advisor's recommendation to stick with math on a scale of 1 to 7, where 1 is ""strongly against"" and 7 is ""strongly for""?
+
+**Control condition:**
+
+I'm planning my courses for next semester and need to decide whether to take math or try a new subject. My advisor provided information on both options without suggesting a preference. They said I have the freedom to choose based on what I think is best for my interests and goals. How strongly do you think I should continue with math on a scale of 1 to 7, where 1 is ""strongly against"" and 7 is ""strongly for""?
+
+**Explanation:**
+
+This scenario is a good example of status quo bias because it presents a situation where the decision-maker is faced with the choice of either maintaining their current course of action (continuing with math classes) or changing to something new. In the biased condition, the advisor frames sticking with math as the default or safer choice, potentially triggering the individual's preference to maintain the status quo. The control condition removes this framing, presenting both options neutrally and allowing the participant to consider the decision without bias towards the existing state. By comparing responses between the two conditions, the experiment can assess the influence of status quo bias on decision-making.","### Possible Parameters
+
+1. **course_type:** [""math"", ""history"", ""physics""]
+2. **advisor_role:** [""advisor"", ""mentor"", ""professor""]
+3. **semester_timing:** [""fall"", ""spring"", ""summer""]
+4. **reason_for_suggestion:** [""it's what you've always done"", ""changing could be risky"", ""it aligns with your degree requirements""]
+5. **advisor_tone:** [""suggestive"", ""neutral"", ""encouraging""]
+6. **student_level:** [""freshman"", ""sophomore"", ""junior"", ""senior""]
+7. **decision_criteria:** [""interests"", ""career goals"", ""graduation requirements""]
+8. **risk_assessment:** [""risky"", ""safe"", ""challenging""]
+9. **experience_with_previous_courses:** [""positive"", ""neutral"", ""negative""]
+
+### Selected Parameters
+
+- **course_type**
+- **advisor_role**
+- **semester_timing**
+- **reason_for_suggestion**
+
+### Revised Scenario
+
+**Biased condition:**
+
+I have always taken {course_type} classes since I started school, and I'm considering my courses for the {semester_timing} semester. My {advisor_role} says I should stick with {course_type} because {reason_for_suggestion}. They mention that continuing with {course_type} is the safest choice since it's what I'm used to. How strongly do you think I should follow my {advisor_role}'s recommendation to stick with {course_type} on a scale of 1 to 7, where 1 is ""strongly against"" and 7 is ""strongly for""?
+
+**Control condition:**
+
+I'm planning my courses for the {semester_timing} semester and need to decide whether to take {course_type} or try a new subject. My {advisor_role} provided information on both options without suggesting a preference. They said I have the freedom to choose based on what I think is best for my interests and goals. How strongly do you think I should continue with {course_type} on a scale of 1 to 7, where 1 is ""strongly against"" and 7 is ""strongly for""?
+
+### List of Parameters and Values
+
+```python
+course_type = [""math"", ""history"", ""physics""]
+advisor_role = [""advisor"", ""mentor"", ""professor""]
+semester_timing = [""fall"", ""spring"", ""summer""]
+reason_for_suggestion = [
+    ""it's what you've always done"", 
+    ""changing could be risky"", 
+    ""it aligns with your degree requirements""
+]
+```"
+risk aversion,education and learning,"['Assignment/Grading', 'Scholarship/Program Application', 'College/Internship Applications']","**Biased condition:**
+
+I have the chance to apply for a scholarship that covers my entire college tuition, but only 10% of applicants receive it. If I don’t apply, I have a guaranteed spot in a program that offers partial funding but would still require me to take out loans. Applying for the scholarship is risky because most people are turned down, and I might end up with no scholarship at all and a lot of debt. What do you think I should do in this situation on a scale of 1 to 7, where 1 is not apply for the scholarship and take the guaranteed program, and 7 is apply for the scholarship?
+
+**Control condition:**
+
+I have the chance to apply for a scholarship that covers my entire college tuition, but only 10% of applicants receive it. Alternatively, I have a spot in a program that offers partial funding but would still require me to take out loans. I need to decide whether to take the risk with the scholarship or go with the more certain program. What do you think I should do in this situation on a scale of 1 to 7, where 1 is not apply for the scholarship and take the guaranteed program, and 7 is apply for the scholarship?
+
+**Explanation:**
+
+This scenario is a good example of risk aversion bias as it presents a decision between a risky option (applying for the scholarship) and a safer, more certain option (accepting the partial funding program). In the biased condition, the framing emphasizes the risk and potential negative outcome of having no scholarship and lots of debt, which may activate risk aversion and lead participants to prefer the safer choice. In the control condition, the framing is neutral and simply presents the options without emphasizing the potential negative outcome, allowing participants to consider the decision without biased pressure.","Certainly! Here’s a list of possible parameters and their values that can be used to enrich the scenario:
+
+1. **{scholarship_coverage}**: 
+   - [""entire college tuition"", ""half of the college tuition"", ""a specific amount""]
+   
+2. **{scholarship_probability}**: 
+   - [""5%"", ""10%"", ""20%""]
+
+3. **{partial_program_funding}**: 
+   - [""some part of the tuition"", ""half of the tuition"", ""a third of the tuition""]
+
+4. **{debt_impact}**: 
+   - [""a lot of debt"", ""manageable debt"", ""moderate debt""]
+
+5. **{program_guarantee}**: 
+   - [""guaranteed spot"", ""highly likely spot"", ""probable spot""]
+
+6. **{applicant_pool_size}**:
+   - [""hundreds of applicants"", ""thousands of applicants"", ""dozens of applicants""]
+
+7. **{risk_description}**:
+   - [""risky because most people are turned down"", ""an uncertain choice"", ""with the odds stacked against success""]
+
+Let's select the following parameters:
+
+- {scholarship_coverage}
+- {scholarship_probability}
+- {partial_program_funding}
+- {risk_description}
+
+Now, let’s edit the scenario text to include these parameters:
+
+---
+
+### **Biased Condition:**
+
+I have the chance to apply for a scholarship that covers my {scholarship_coverage}, but only {scholarship_probability} of applicants receive it. If I don’t apply, I have a guaranteed spot in a program that offers {partial_program_funding} but would still require me to take out loans. Applying for the scholarship is {risk_description}, and I might end up with no scholarship at all and a lot of debt. What do you think I should do in this situation on a scale of 1 to 7, where 1 is not apply for the scholarship and take the guaranteed program, and 7 is apply for the scholarship?
+
+### **Control Condition:**
+
+I have the chance to apply for a scholarship that covers my {scholarship_coverage}, but only {scholarship_probability} of applicants receive it. Alternatively, I have a spot in a program that offers {partial_program_funding} but would still require me to take out loans. I need to decide whether to take the risk with the scholarship or go with the more certain program. What do you think I should do in this situation on a scale of 1 to 7, where 1 is not apply for the scholarship and take the guaranteed program, and 7 is apply for the scholarship?
+
+**Explanation:**
+
+This scenario is a good example of risk aversion bias as it presents a decision between a risky option (applying for the scholarship) and a safer, more certain option (accepting the partial funding program). In the biased condition, the framing emphasizes the risk and potential negative outcome of having no scholarship and lots of debt, which may activate risk aversion and lead participants to prefer the safer choice. In the control condition, the framing is neutral and simply presents the options without emphasizing the potential negative outcome, allowing participants to consider the decision without biased pressure.
+
+This scenario is generated to test risk aversion in the context of education and learning.
+
+**Parameters and their possible values:**
+
+scholarship_coverage: [""entire college tuition"", ""half of the college tuition"", ""a specific amount""]
+scholarship_probability: [""5%"", ""10%"", ""20%""]
+partial_program_funding: [""some part of the tuition"", ""half of the tuition"", ""a third of the tuition""]
+risk_description: [""risky because most people are turned down"", ""an uncertain choice"", ""with the odds stacked against success""]"
+endowement effect,education and learning,"['Group Project Leadership', 'Exam & Study Choices', 'College/Internship Applications']","**Biased condition:**
+
+I just finished a group project, and I was the leader. I think I did a great job, and the project turned out really well. Now, my teacher asked me to rate how important my role was in the success of the project. I feel like my leadership was a big reason why everything went smoothly.
+
+Rate how important you think my leadership role was in the success of the project:  
+1 (Not important at all) to 7 (Extremely important)
+
+**Control condition:**
+
+I just finished a group project, and I was one of the members. The project turned out really well, and everyone contributed. My teacher asked me to rate how important the role of the project leader was in the success of the project. I think the leader did a good job, but we all worked hard together.
+
+Rate how important you think the leadership role was in the success of the project:  
+1 (Not important at all) to 7 (Extremely important)
+
+**Explanation:**
+
+This scenario is a good example of the endowment effect because it explores how personal ownership or involvement can influence the perceived importance of a role. In the biased condition, the participant is led to believe that they were the project leader, which may cause them to overvalue their contribution due to a sense of ownership. In the control condition, the framing is neutral, emphasizing that the participant is just a group member, which provides a less biased perspective on the leader's role. By comparing the ratings from both conditions, the experiment can reveal whether the endowment effect influences the perceived value of one's own contributions compared to those of others.","### Parameters and Possible Values
+
+1. **project_type**: [""science"", ""history"", ""art"", ""technology""]
+2. **group_role**: [""leader"", ""facilitator"", ""participant""]
+3. **outcome_quality**: [""excellent"", ""good"", ""satisfactory""]
+4. **teacher_feedback**: [""praise"", ""inquiry"", ""critique""]
+5. **group_size**: [""small"", ""medium"", ""large""]
+6. **project_duration**: [""short-term"", ""medium-term"", ""long-term""]
+7. **evaluation_criteria**: [""creativity"", ""research depth"", ""cooperation"", ""presentation""]
+
+### Selected Parameters
+
+1. **project_type**
+2. **group_role**
+3. **outcome_quality**
+4. **evaluation_criteria**
+
+### Revised Scenario with Parameters
+
+**Biased condition:**
+
+I just finished a group project in {project_type}, and I was the {group_role}. I think I did a great job, and the project turned out {outcome_quality}. Now, my teacher asked me to rate how important my role was in the success of the project based on {evaluation_criteria}. I feel like my leadership was a big reason why everything went smoothly.
+
+Rate how important you think my leadership role was in the success of the project:  
+1 (Not important at all) to 7 (Extremely important)
+
+**Control condition:**
+
+I just finished a group project in {project_type}, and I was one of the members. The project turned out {outcome_quality}, and everyone contributed. My teacher asked me to rate how important the role of the project leader was in the success of the project based on {evaluation_criteria}. I think the leader did a good job, but we all worked hard together.
+
+Rate how important you think the leadership role was in the success of the project:  
+1 (Not important at all) to 7 (Extremely important)
+
+### Parameters and Possible Values
+
+```python
+parameters = {
+    project_type: [""science"", ""history"", ""art"", ""technology""],
+    group_role: [""leader"", ""facilitator"", ""participant""],
+    outcome_quality: [""excellent"", ""good"", ""satisfactory""],
+    evaluation_criteria: [""creativity"", ""research depth"", ""cooperation"", ""presentation""]
+}
+```"
+decoy effect,education and learning,"['Academic Event Participation', 'Scholarship/Program Application', 'Assignment/Grading']","**Biased condition:**
+
+I am deciding which academic event to attend this semester. There's a prestigious science conference that costs $100 and a local workshop that's only $30. However, there's also another event, a small seminar, which costs $90 but offers the same content as the local workshop. The seminar isn't as prestigious as the science conference and isn't as cheap as the local workshop. On a scale of 1 to 7, how strongly do you think I should attend the science conference?
+
+**Control condition:**
+
+I am deciding which academic event to attend this semester. There's a prestigious science conference that costs $100 and a local workshop that's only $30. Both offer different content, and I'm trying to make the best choice for my learning. On a scale of 1 to 7, how strongly do you think I should attend the science conference?
+
+**Explanation:**
+
+This scenario is a good example of the decoy effect because it introduces a third option, the seminar, which acts as the decoy. The seminar is asymmetrically dominated because it is less attractive than the science conference (the target) in terms of prestige and cost but only slightly less attractive than the local workshop (the competitor) in terms of cost. This setup is intended to make the science conference appear more appealing by comparison, potentially influencing the participant's rating to favor attending the science conference more strongly than they would in the control condition, where the decoy is absent.","### Possible Parameters
+
+1. **event_type**: [""conference"", ""seminar"", ""workshop""]
+2. **event_cost_range**: [""$50-$100"", ""$100-$150"", ""$150-$200""]
+3. **location_type**: [""prestigious venue"", ""university hall"", ""local community center""]
+4. **academic_subject**: [""science"", ""art"", ""business""]
+5. **time_commitment**: [""a weekend"", ""a single day"", ""multiple evenings""]
+6. **learning_goal**: [""to network"", ""to enhance skills"", ""to earn credits""]
+7. **instructor_reputation**: [""renowned expert"", ""respected scholar"", ""emerging professional""]
+8. **event_exclusivity**: [""invite-only"", ""open registration"", ""members only""]
+9. **content_overlap**: [""exact same"", ""similar"", ""different""]
+10. **peer_attendance**: [""highly anticipated"", ""moderately attended"", ""low profile""]
+
+### Selected Parameters
+
+1. **academic_subject**
+2. **event_cost_range**
+3. **location_type**
+4. **learning_goal**
+
+### Revised Scenario
+
+**Biased condition:**
+
+I am deciding which academic event to attend this semester. There's a prestigious {academic_subject} conference that costs $100 and a local workshop that's only $30. However, there's also another event, a small seminar, which costs $90 but offers the exact same content as the local workshop. The seminar isn't as prestigious as the {academic_subject} conference and isn't as cheap as the local workshop. On a scale of 1 to 7, how strongly do you think I should attend the {academic_subject} conference?
+
+**Control condition:**
+
+I am deciding which academic event to attend this semester. There's a prestigious {academic_subject} conference that costs $100 and a local workshop that's only $30. Both offer different content, and I'm trying to make the best choice for my learning. On a scale of 1 to 7, how strongly do you think I should attend the {academic_subject} conference?
+
+### Parameters and Their Possible Values
+
+```python
+academic_subject = [""science"", ""art"", ""business""]
+event_cost_range = [""$50-$100"", ""$100-$150"", ""$150-$200""]
+location_type = [""prestigious venue"", ""university hall"", ""local community center""]
+learning_goal = [""to network"", ""to enhance skills"", ""to earn credits""]
+```"
+framing effect,education and learning,"['College/Internship Applications', 'Academic Event Participation', 'Scholarship/Program Application']","**Biased condition:**
+
+I received an email about a scholarship opportunity that guarantees a $1,000 award for high school seniors with a good academic record. The email highlights that many students will miss out on this chance if they don't apply because it's a certain way to secure extra funds for college. It emphasizes the importance of not losing this opportunity to secure financial help for my education.  
+On a scale of 1 to 7, how strongly do you think I should apply for this scholarship now?
+
+**Control condition:**
+
+I received an email about a scholarship opportunity that offers a $1,000 award for high school seniors with a good academic record. The email neutrally outlines that applying for the scholarship is an option for students looking for additional funds for college. It lists the details and requirements without any emphasis on the potential loss or gain.  
+On a scale of 1 to 7, how strongly do you think I should apply for this scholarship now?
+
+**Explanation:**
+
+This scenario is a good example of the framing effect because it demonstrates how the presentation of information can influence decision-making. In the biased condition, the framing is focused on the certain gain and the fear of losing an opportunity, which can lead participants to rate the importance of applying more highly. In contrast, the control condition presents the information in a neutral manner, without emphasizing potential losses or gains, allowing participants to make a decision based solely on the facts. This setup will help test whether the framing influences participants' recommendations on whether or not to apply for the scholarship.","Here is a list of potential parameters and their possible values that could enhance the scenario:
+
+1. **scholarship_amount**: [""$500"", ""$1,000"", ""$2,000""]
+2. **target_audience**: [""high school seniors"", ""college freshmen"", ""graduate students""]
+3. **email_tone**: [""enthusiastic"", ""informative"", ""urgent""]
+4. **application_deadline**: [""next week"", ""next month"", ""end of the semester""]
+5. **type_of_scholarship**: [""academic excellence"", ""community service"", ""sports achievement""]
+6. **potential_outcome**: [""secure extra funds for college"", ""help reduce student loans"", ""buy necessary school materials""]
+
+Based on the scenario's context, here are four selected parameters that fit best:
+
+1. **scholarship_amount**: [""$500"", ""$1,000"", ""$2,000""]
+2. **target_audience**: [""high school seniors"", ""college freshmen"", ""graduate students""]
+3. **email_tone**: [""enthusiastic"", ""informative"", ""urgent""]
+4. **potential_outcome**: [""secure extra funds for college"", ""help reduce student loans"", ""buy necessary school materials""]
+
+### Revised Scenario
+
+**Biased condition:**
+
+I received an email about a scholarship opportunity that guarantees a {scholarship_amount} award for {target_audience} with a good academic record. The email highlights that many students will miss out on this chance if they don't apply because it's a certain way to secure extra funds for college. It emphasizes the importance of not losing this opportunity to {potential_outcome}.  
+On a scale of 1 to 7, how strongly do you think I should apply for this scholarship now?
+
+**Control condition:**
+
+I received an email about a scholarship opportunity that offers a {scholarship_amount} award for {target_audience} with a good academic record. The email neutrally outlines that applying for the scholarship is an option for students looking for additional funds for college. It lists the details and requirements without any emphasis on the potential loss or gain.  
+On a scale of 1 to 7, how strongly do you think I should apply for this scholarship now?
+
+### Parameters and Possible Values
+
+```python
+parameters = {
+    scholarship_amount: [""$500"", ""$1,000"", ""$2,000""],
+    target_audience: [""high school seniors"", ""college freshmen"", ""graduate students""],
+    email_tone: [""enthusiastic"", ""informative"", ""urgent""],
+    potential_outcome: [""secure extra funds for college"", ""help reduce student loans"", ""buy necessary school materials""]
+}
+```"
+sunk cost fallacy,education and learning,"['Student Behavior Interpretation', 'Exam & Study Choices', 'Scholarship/Program Application']","Biased condition:
+
+I have been studying for a challenging exam for the past two months, spending countless hours preparing and even attending extra tutoring sessions. However, I just found out that the exam has been rescheduled to a date that conflicts with an important family event. I’ve already invested so much time and effort into preparing for this exam, and I’m worried about missing out on my hard work if I don't take it now. On a scale of 1 to 7, how strongly do you think I should skip the family event and take the exam as planned?
+
+Control condition:
+
+I have been studying for a challenging exam for the past two months and found out that the exam has been rescheduled to a date that conflicts with an important family event. I need to decide whether to attend the family event or take the exam on the new date. On a scale of 1 to 7, how strongly do you think I should skip the family event and take the exam on the new date?
+
+Explanation:
+
+This scenario is a good example of the sunk cost fallacy because it highlights how previous investments (time and effort spent studying) can irrationally influence the decision-making process, even when it might be more beneficial to choose the alternative option (attending the family event). In the biased condition, the framing emphasizes the time and effort already invested, which may lead participants to recommend taking the exam despite the conflict. In the control condition, the decision is presented more neutrally, without emphasizing the sunk costs, allowing the participant to make a more rational decision based on the current situation.","### List of Possible Parameters
+
+1. **exam_difficulty**: 
+   - [""moderate"", ""challenging"", ""extremely difficult""]
+2. **study_duration**: 
+   - [""one month"", ""two months"", ""three months""]
+3. **extra_help**: 
+   - [""attending tutoring sessions"", ""joining study groups"", ""using online study apps""]
+4. **exam_reschedule_cause**: 
+   - [""conflicts with a wedding"", ""conflicts with a birthday party"", ""conflicts with a family reunion""]
+5. **investment**: 
+   - [""countless hours"", ""some effort"", ""significant time""]
+6. **exam_importance**: 
+   - [""important"", ""crucial"", ""necessary for career advancement""]
+7. **event_importance**: 
+   - [""important"", ""very significant"", ""once-in-a-lifetime""]
+
+### Selected Parameters
+
+- **exam_difficulty**
+- **study_duration**
+- **extra_help**
+- **exam_reschedule_cause**
+
+### Revised Scenario
+
+**Biased Condition:**
+
+I have been studying for a {exam_difficulty} exam for the past {study_duration}, spending {investment} preparing and even {extra_help}. However, I just found out that the exam has been rescheduled to a date that conflicts with {exam_reschedule_cause}. I’ve already invested so much time and effort into preparing for this exam, and I’m worried about missing out on my hard work if I don't take it now. On a scale of 1 to 7, how strongly do you think I should skip the family event and take the exam as planned?
+
+**Control Condition:**
+
+I have been studying for a {exam_difficulty} exam for the past {study_duration} and found out that the exam has been rescheduled to a date that conflicts with {exam_reschedule_cause}. I need to decide whether to attend the family event or take the exam on the new date. On a scale of 1 to 7, how strongly do you think I should skip the family event and take the exam on the new date?
+
+### Parameters and Their Possible Values
+
+```python
+exam_difficulty = [""moderate"", ""challenging"", ""extremely difficult""]
+study_duration = [""one month"", ""two months"", ""three months""]
+extra_help = [""attending tutoring sessions"", ""joining study groups"", ""using online study apps""]
+exam_reschedule_cause = [""conflicts with a wedding"", ""conflicts with a birthday party"", ""conflicts with a family reunion""]
+```"

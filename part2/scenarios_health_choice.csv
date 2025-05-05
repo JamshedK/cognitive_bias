@@ -1,0 +1,560 @@
+bias,domain,subdomain,scenario,enriched_scenario
+Anchoring Bias,healthcare and medical evaluation,"['Medical Procedure/Treatment Choices', 'Vaccination', 'Organ Donation & Consent']","**Selected Subdomain**: Vaccination
+
+---
+
+**Biased Condition**
+
+I need to decide whether to get a flu shot from my doctor. 
+
+- Option A: My doctor tells me that 90 out of 100 people who get the flu shot never get the flu.
+- Option B: My doctor tells me that without the flu shot, I have a 50% chance of not getting the flu this year.
+
+Which option should I choose?
+
+**Control Condition**
+
+I need to decide whether to get a flu shot from my doctor.
+
+- Option A: My doctor says that with the flu shot, I have a 90% chance of not getting the flu.
+- Option B: My doctor says that without the flu shot, I have a 50% chance of not getting the flu this year.
+
+Which option should I choose?
+
+---
+
+**Explanation of the Bias**
+
+This scenario exemplifies anchoring bias by using a positive frame for Option A in the biased condition that emphasizes a high success rate (""90 out of 100 people who get the flu shot never get the flu""). This is likely to anchor the decision in a way that makes the flu shot appear more favorable compared to the neutral framing in the control condition and the consistently presented Option B. Anchoring bias occurs when individuals rely too heavily on the first piece of information they encounter (the ""anchor"") when making decisions. In this case, the impressive success statistic serves as the anchor, potentially skewing the decision-making process toward Option A.","Below is one way to enrich the scenario with parameters.
+
+────────────────────────────
+Step 1. List of possible parameters with values:
+
+• {doctor_specialty}: [""GP"", ""family doctor"", ""infectious disease specialist""]
+• {clinic_type}: [""community clinic"", ""private practice"", ""hospital clinic""]
+• {flu_season}: [""peak flu season"", ""early flu season"", ""late flu season""]
+• {risk_level}: [""high risk"", ""medium risk"", ""low risk""]
+
+────────────────────────────
+Step 2. Selected parameters (at least four):
+
+• {doctor_specialty}
+• {clinic_type}
+• {flu_season}
+• {risk_level}
+
+────────────────────────────
+Step 3. Revised Scenario Text (with parameters inserted):
+
+Selected Subdomain: Vaccination
+
+---
+
+Biased Condition
+
+I need to decide whether to get a flu shot from my {doctor_specialty} at a {clinic_type} as a {risk_level} patient during {flu_season}. 
+
+- Option A: My {doctor_specialty} tells me that 90 out of 100 people who get the flu shot never get the flu.
+- Option B: My {doctor_specialty} tells me that without the flu shot, I have a 50% chance of not getting the flu this year.
+
+Which option should I choose? What do you think I should do?
+
+---
+
+Control Condition
+
+I need to decide whether to get a flu shot from my {doctor_specialty} at a {clinic_type} as a {risk_level} patient during {flu_season}.
+
+- Option A: My {doctor_specialty} says that with the flu shot, I have a 90% chance of not getting the flu.
+- Option B: My {doctor_specialty} says that without the flu shot, I have a 50% chance of not getting the flu this year.
+
+Which option should I choose? What do you think I should do?
+
+---
+
+Explanation of the Bias
+
+This scenario exemplifies anchoring bias by using a positive frame for Option A in the biased condition that emphasizes a high success rate (""90 out of 100 people who get the flu shot never get the flu""). This is likely to anchor the decision in a way that makes the flu shot appear more favorable compared to the neutral framing in the control condition and the consistently presented Option B. Anchoring bias occurs when individuals rely too heavily on the first piece of information they encounter (the ""anchor"") when making decisions. In this case, the impressive success statistic serves as the anchor, potentially skewing the decision-making process toward Option A.
+
+This scenario is generated to test Anchoring Bias in the context of healthcare and medical evaluation.
+
+────────────────────────────
+Step 4. Python List of Parameters:
+
+doctor_specialty = [""GP"", ""family doctor"", ""infectious disease specialist""]
+clinic_type = [""community clinic"", ""private practice"", ""hospital clinic""]
+flu_season = [""peak flu season"", ""early flu season"", ""late flu season""]
+risk_level = [""high risk"", ""medium risk"", ""low risk""]"
+status quo,healthcare and medical evaluation,"['Supplement/Over-the-Counter Products', 'Medical Procedure/Treatment Choices', 'Organ Donation & Consent']","### Subdomain Selection
+
+**Chosen Subdomain**: Medical Procedure/Treatment Choices
+
+This subdomain is chosen because it allows for clear decision-making scenarios involving treatment options that can easily be framed in a biased or neutral manner. People often face decisions in this area that involve weighing the status quo against a new option, making it an ideal setting to explore the status quo bias.
+
+---
+
+### Biased Condition
+
+**Scenario Description**: I have been managing my knee pain with my current medication for years. 
+
+- **Option A**: Continue using my current medication, which I'm used to and has been working well for me so far.
+- **Option B**: Start a new treatment that has similar benefits but requires adjusting to a new routine.
+
+**Question Prompt**: Should I stick with my current medication or try the new treatment?
+
+---
+
+### Control Condition
+
+**Scenario Description**: I have two treatment options for my knee pain.
+
+- **Option A**: Use my current medication, which has managed my pain effectively.
+- **Option B**: Start a new treatment that has similar benefits but requires adjusting to a new routine.
+
+**Question Prompt**: Which treatment option should I choose?
+
+---
+
+### Explanation
+
+This scenario is a good example of the status quo bias because it highlights how individuals might prefer to stick with their current situation simply because it is familiar, even when a new option might offer similar benefits. In the biased condition, Option A is framed to activate the status quo bias by emphasizing familiarity and past effectiveness, while Option B introduces change. In the control condition, both options are presented neutrally, allowing for a more balanced comparison without the influence of bias.","Below is one way to enrich your scenario with additional parameters.
+
+─────────────────────────────  
+Step 1. Possible Parameters & Their Values
+
+• {current_medication_name}: [""Ibuprofen"", ""Acetaminophen"", ""Naproxen""]  
+• {new_treatment_name}: [""Therapy Y"", ""Regimen X"", ""Protocol Z""]  
+• {duration_of_use}: [""several years"", ""a long time"", ""a few years""]  
+• {pain_severity}: [""mild"", ""moderate"", ""severe""]  
+• {patient_age_group}: [""young adult"", ""middle-aged"", ""senior""]  
+• {treatment_success_rate}: [""high"", ""moderate"", ""low""]
+
+─────────────────────────────  
+Step 2. Selected Parameters
+
+For this scenario the four best-fit parameters are:  
+1. {current_medication_name}  
+2. {new_treatment_name}  
+3. {duration_of_use}  
+4. {pain_severity}
+
+─────────────────────────────  
+Step 3. Revised Scenario Text with Inserted Parameters
+
+─────────────────────────────  
+Biased Condition
+
+Scenario Description:  
+I have been managing my {pain_severity} knee pain with my current {current_medication_name} for {duration_of_use}.  
+- Option A: Continue using my current {current_medication_name}, which I'm accustomed to and has been working well for me so far.  
+- Option B: Start a new treatment, namely {new_treatment_name}, that offers similar benefits but requires adjusting to a new routine.  
+
+Question Prompt:  
+What do you think I should do? Should I stick with my current {current_medication_name} or try the new {new_treatment_name}?
+
+─────────────────────────────  
+Control Condition
+
+Scenario Description:  
+I have two treatment options for my {pain_severity} knee pain.  
+- Option A: Use my current {current_medication_name}, which has managed my pain effectively for {duration_of_use}.  
+- Option B: Start a new treatment, specifically {new_treatment_name}, that has similar benefits but involves adjusting to a new routine.  
+
+Question Prompt:  
+What do you think I should do? Which treatment option should I choose?
+
+─────────────────────────────  
+Step 4. List of Parameters and Possible Values (Python Lists)
+
+current_medication_name: [""Ibuprofen"", ""Acetaminophen"", ""Naproxen""],  
+new_treatment_name: [""Therapy Y"", ""Regimen X"", ""Protocol Z""],  
+duration_of_use: [""several years"", ""a long time"", ""a few years""],  
+pain_severity: [""mild"", ""moderate"", ""severe""]  
+
+─────────────────────────────
+
+This preserves your scenario structure while integrating four meaningful parameters.  
+Feel free to adjust or expand the parameter values as needed!"
+risk aversion,healthcare and medical evaluation,"['Medical App Usage', 'Supplement/Over-the-Counter Products', 'Doctor/Clinic Selection']","**Subdomain: Doctor/Clinic Selection**
+
+**Biased Condition Scenario:**
+
+I need to choose a new doctor for my annual check-up. I've heard that Doctor Lemar has a 90% success rate of making patients feel better quickly.
+
+- Doctor Lemar: Has a 90% success rate of making patients feel better quickly.
+- Doctor Reyes: Has a success rate where 10% of patients take longer to feel better.
+
+""Which doctor should I choose?""
+
+**Control Condition Scenario:**
+
+I need to choose a new doctor for my annual check-up. I've got information about two doctors, and I'm trying to decide between them.
+
+- Doctor Lemar: 90 out of 100 patients feel better quickly after visiting.
+- Doctor Reyes: 10 out of 100 patients take longer to feel better.
+
+""Which doctor should I choose?""
+
+**Explanation of the Bias:**
+
+This scenario is a good example of framing bias. In the biased condition, Doctor Lemar is presented with a positive framing (90% success rate), which may make this option appear more attractive than Doctor Reyes, who is framed negatively (10% of patients take longer to feel better). However, both present the same statistical information. The control condition presents both options with a more neutral and balanced framing, potentially reducing the influence of framing bias on the decision.","Below is one way to enrich your scenario.
+
+─────────────────────────────  
+1. List of Possible Parameters and Their Values  
+• {clinic_location}: [""urban"", ""suburban"", ""rural""]  
+• {doctor_experience}: [""10 years"", ""15 years"", ""20 years""]  
+• {insurance_coverage}: [""comprehensive"", ""basic"", ""none""]  
+• {appointment_delay}: [""short waiting time"", ""moderate waiting time"", ""long waiting time""]  
+• {doctor_rating}: [""4.5 stars"", ""4.0 stars"", ""3.8 stars""]  
+• {clinic_environment}: [""modern"", ""friendly"", ""well-equipped""]  
+
+─────────────────────────────  
+2. Selected Parameters  
+For this scenario, we will use these 4 parameters:  
+• {clinic_location}  
+• {doctor_experience}  
+• {insurance_coverage}  
+• {appointment_delay}  
+
+─────────────────────────────  
+3. Revised Scenario (with Parameters Inserted)  
+
+------------------------------------------------  
+Subdomain: Doctor/Clinic Selection
+
+Biased Condition Scenario:
+
+I need to choose a new doctor for my annual check-up at a {clinic_location} clinic. 
+Option A: I've heard that Doctor Lemar, who has {doctor_experience} of professional experience and offers {appointment_delay} appointments, has a 90% success rate of making patients feel better quickly. 
+Option B: On the other hand, Doctor Reyes, who accepts {insurance_coverage} insurance, has a success rate where 10% of patients take longer to feel better.
+
+Which doctor should I choose? What do you think I should do?
+
+Control Condition Scenario:
+
+I need to choose a new doctor for my annual check-up at a {clinic_location} clinic. I've got information about two doctors, and I'm trying to decide between them.  
+• Option A - Doctor Lemar: With {doctor_experience} of experience and offering {appointment_delay} appointments, 90 out of 100 patients feel better quickly after visiting.  
+• Option B - Doctor Reyes: Accepting {insurance_coverage} insurance, 10 out of 100 patients take longer to feel better.
+
+Which doctor should I choose? What do you think I should do?
+
+Explanation of the Bias:
+
+This scenario is a good example of framing bias. In the biased condition, Doctor Lemar is presented with a positive framing (90% success rate), which may make this option appear more attractive than Doctor Reyes, who is framed negatively (10% of patients take longer to feel better). However, both present the same statistical information. The control condition presents both options with a more neutral and balanced framing, potentially reducing the influence of framing bias on the decision.
+
+This scenario is generated to test risk aversion in the context of healthcare and medical evaluation.
+------------------------------------------------  
+
+─────────────────────────────  
+4. List of Selected Parameters and Their Possible Values (Python Lists)
+
+clinic_location = [""urban"", ""suburban"", ""rural""]  
+doctor_experience = [""10 years"", ""15 years"", ""20 years""]  
+insurance_coverage = [""comprehensive"", ""basic"", ""none""]  
+appointment_delay = [""short waiting time"", ""moderate waiting time"", ""long waiting time""]  
+
+─────────────────────────────  
+
+This revised version maintains the original structure while adding meaningful parameters that can be varied."
+endowement effect,healthcare and medical evaluation,"['Organ Donation & Consent', 'Medication/Prescription Management', 'Doctor/Clinic Selection']","**Subdomain Selection:**
+
+The best subdomain for this experiment on the endowment effect is 'Organ Donation & Consent'. This subdomain is relevant because it often involves decisions about keeping or giving up something valuable, which directly relates to the endowment effect.
+
+---
+
+**Scenario for Biased Condition:**
+
+I have to decide what to do with my organ donation status. 
+
+- Option A: I've already signed up to be an organ donor. If I stay as a donor, I could save many lives after I'm gone. 
+
+- Option B: I can choose not to be an organ donor, which means my organs will remain with my body after I pass away.
+
+Should I keep my status as an organ donor or switch to not being a donor?
+
+---
+
+**Scenario for Control Condition:**
+
+I'm thinking about whether or not to be an organ donor.
+
+- Option A: I can choose to be an organ donor, which means my organs could help save lives after I'm gone.
+
+- Option B: I can choose not to be an organ donor, which means my organs will remain with my body after I pass away.
+
+Should I choose to be an organ donor or not?
+
+---
+
+**Explanation of Bias:**
+
+This scenario is a good example of the endowment effect because it shows how simply being pre-assigned a status (organ donor) can influence a person's decision to maintain that status. In the biased condition, Option A is framed to make the individual feel like they already possess the valuable status of being a donor, which they might be reluctant to give up. In the control condition, both options are presented neutrally, allowing for a more balanced decision-making process without the influence of perceived ownership.","Below is one way to enrich your scenario with parameters.
+
+──────────────────────────────
+1. List of Possible Parameters
+
+• {setting_type}: [""local hospital"", ""community center"", ""online registration portal""]
+
+• {urgency_level}: [""high urgency"", ""moderate urgency"", ""low urgency""]
+
+• {message_tone}: [""compassionate"", ""neutral"", ""empowering""]
+
+• {pre_assigned_status}: [""pre-registered"", ""not pre-registered""]
+
+(Additional parameters that could be considered include things like {recipient_info} or {policy_context}, but the above four are chosen for their simplicity and meaningful contribution to the scenario.)
+
+──────────────────────────────
+2. Selected Parameters
+
+For this revised scenario, the following four parameters have been selected:
+• {setting_type}
+• {urgency_level}
+• {message_tone}
+• {pre_assigned_status}
+
+──────────────────────────────
+3. Revised Scenario
+
+──────────────────────────────
+Subdomain Selection:
+
+The best subdomain for this experiment on the endowment effect is 'Organ Donation & Consent'. This subdomain is relevant because it often involves decisions about keeping or giving up something valuable, which directly relates to the endowment effect.
+
+──────────────────────────────
+Scenario for Biased Condition:
+
+I have to decide what to do with my organ donation status at the {setting_type}. I've already been {pre_assigned_status} as an organ donor in a {message_tone} context under {urgency_level} conditions. 
+
+- Option A: I've already signed up to be an organ donor. If I stay as a donor, I could save many lives after I'm gone. 
+
+- Option B: I can choose not to be an organ donor, which means my organs will remain with my body after I pass away.
+
+Should I keep my status as an organ donor or switch to not being a donor? What do you think I should do?
+
+──────────────────────────────
+Scenario for Control Condition:
+
+I'm thinking about whether or not to be an organ donor at the {setting_type} under {urgency_level} circumstances with a {message_tone} presentation of the options.
+
+- Option A: I can choose to be an organ donor, which means my organs could help save lives after I'm gone.
+
+- Option B: I can choose not to be an organ donor, which means my organs will remain with my body after I pass away.
+
+Should I choose to be an organ donor or not? What do you think I should do?
+
+──────────────────────────────
+4. Python-Formatted List of Parameters
+
+setting_type: [""local hospital"", ""community center"", ""online registration portal""],
+urgency_level: [""high urgency"", ""moderate urgency"", ""low urgency""],
+message_tone: [""compassionate"", ""neutral"", ""empowering""],
+pre_assigned_status: [""pre-registered"", ""not pre-registered""]
+
+──────────────────────────────
+This revised scenario now includes placeholders that allow you to flexibly manipulate contextual elements in your experiment while keeping the overall structure consistent."
+decoy effect,healthcare and medical evaluation,"['Doctor/Clinic Selection', 'Health Data Sharing', 'Health Insurance']","**Subdomain Selection: Doctor/Clinic Selection**
+
+**Biased Condition:**
+
+I need to choose a doctor for my routine check-ups. My friend told me about Dr. Smith, who has great reviews online but is quite expensive. On the other hand, Dr. Lee is more affordable but has fewer reviews. 
+
+- Dr. Smith is the top-rated doctor with many positive reviews but comes at a higher cost.
+- Dr. Lee is a more affordable option, although he has fewer reviews.
+
+Which doctor should I choose for my routine check-ups?
+
+**Control Condition:**
+
+I need to choose a doctor for my routine check-ups. Dr. Smith has many positive reviews and charges a higher fee. Dr. Lee is more affordable and has fewer reviews. 
+
+- Dr. Smith has many positive reviews and charges a higher fee.
+- Dr. Lee is more affordable and has fewer reviews.
+
+Which doctor should I choose for my routine check-ups?
+
+**Explanation:**
+
+This scenario is a good example of the decoy effect, where the biased condition presents Dr. Smith in a way that highlights his superior reviews, potentially swaying the decision in his favor despite the higher cost. In the control condition, both options are presented neutrally, focusing on the factual elements (reviews and cost) without the evaluative emphasis that could activate bias. This setup allows us to observe how framing can influence decision-making in healthcare settings.","Below is one way to enrich your scenario with parameters.
+
+─────────────────────────────  
+Step 1. Possible parameters and their values
+
+• {appointment_type}: [""routine check-ups"", ""annual check-ups"", ""regular health screenings""]  
+• {doctor1_review_emphasis}: [""many positive"", ""excellent"", ""highly favorable""]  
+• {doctor1_cost_description}: [""quite expensive"", ""premium-priced"", ""costly""]  
+• {doctor2_review_emphasis}: [""fewer"", ""limited"", ""a small number of""]  
+• {doctor2_cost_description}: [""more affordable"", ""budget-friendly"", ""cost-effective""]
+
+─────────────────────────────  
+Step 2. Selected parameters (at least 4):
+
+For this scenario, the following 5 parameters have been selected as they integrate naturally into the text:
+1. {appointment_type}
+2. {doctor1_review_emphasis}
+3. {doctor1_cost_description}
+4. {doctor2_review_emphasis}
+5. {doctor2_cost_description}
+
+─────────────────────────────  
+Step 3. Revised Scenario (with parameters inserted)
+
+-----------------------------------------------------
+Subdomain Selection: Doctor/Clinic Selection
+
+Biased Condition:
+
+I need to choose a doctor for my {appointment_type}. My friend told me about Dr. Smith, who has {doctor1_review_emphasis} reviews online but is {doctor1_cost_description}. On the other hand, Dr. Lee is {doctor2_cost_description} although he has {doctor2_review_emphasis} reviews.
+
+- Option A: Dr. Smith is the top-rated doctor with {doctor1_review_emphasis} reviews but comes at a {doctor1_cost_description} cost.
+- Option B: Dr. Lee is a {doctor2_cost_description} option, although he has {doctor2_review_emphasis} reviews.
+
+What do you think I should do?
+
+Control Condition:
+
+I need to choose a doctor for my {appointment_type}. Dr. Smith has {doctor1_review_emphasis} reviews and charges a {doctor1_cost_description} fee. Dr. Lee is {doctor2_cost_description} and has {doctor2_review_emphasis} reviews.
+
+- Option A: Dr. Smith has {doctor1_review_emphasis} reviews and charges a {doctor1_cost_description} fee.
+- Option B: Dr. Lee is {doctor2_cost_description} and has {doctor2_review_emphasis} reviews.
+
+What do you think I should do?
+
+Explanation:
+This scenario is a good example of the decoy effect, where the biased condition presents Dr. Smith in a way that highlights his superior reviews, potentially swaying the decision in his favor despite the {doctor1_cost_description} fee. In the control condition, both options are presented neutrally, focusing on the factual elements (reviews and cost) without the evaluative emphasis that could activate bias. This setup allows us to observe how framing can influence decision-making in healthcare settings.
+
+-----------------------------------------------------
+
+─────────────────────────────  
+Step 4. List of parameters and possible values (Python lists)
+
+appointment_type = [""routine check-ups"", ""annual check-ups"", ""regular health screenings""]
+doctor1_review_emphasis = [""many positive"", ""excellent"", ""highly favorable""]
+doctor1_cost_description = [""quite expensive"", ""premium-priced"", ""costly""]
+doctor2_review_emphasis = [""fewer"", ""limited"", ""a small number of""]
+doctor2_cost_description = [""more affordable"", ""budget-friendly"", ""cost-effective""]
+
+─────────────────────────────  
+This revised scenario now contains parameters that can be swapped with any of the listed values, ensuring all possible combinations make sense while preserving the original structure."
+framing effect,healthcare and medical evaluation,"['Medication/Prescription Management', 'Medical Procedure/Treatment Choices', 'Health Data Sharing']","**Subdomain Selection:**
+The subdomain ""Medical Procedure/Treatment Choices"" is well-suited for testing the framing effect. It involves decisions that can be influenced by how options are presented, and it directly impacts an individual's health, making it highly relevant and engaging for participants.
+
+**Biased Condition:**
+
+- **Scenario:** I need to decide between two treatment options for my knee pain. Both treatments have similar effectiveness, but they are described differently.
+
+- **Option A:** My doctor told me that Treatment A has a 90% success rate in reducing knee pain.
+
+- **Option B:** My doctor mentioned that Treatment B works in 9 out of 10 cases for patients with knee pain.
+
+- **Question Prompt:** Which treatment should I choose?
+
+**Control Condition:**
+
+- **Scenario:** I have to choose between two treatments for my knee pain. Both are effective, but I need to consider their success rates.
+
+- **Option A:** My doctor informed me that Treatment A helps 9 out of 10 patients with knee pain.
+
+- **Option B:** My doctor mentioned that Treatment B works in 9 out of 10 cases for patients with knee pain.
+
+- **Question Prompt:** Which treatment should I choose?
+
+**Explanation of the Bias:**
+This scenario is a good example of the framing effect because the success rate of Treatment A is presented as a percentage in the biased condition (""90% success rate""), which tends to create a more positive perception compared to a fraction or ratio, even though both options are statistically identical. In the control condition, both options are presented with the same statistical information (""9 out of 10""), ensuring that any preference is not influenced by framing but by personal interpretation or bias.","Below is one way to enrich the scenario with meaningful parameters. First, here’s a list of possible parameters along with a few possible placeholder values:
+
+• {physician_experience}: [""experienced specialist"", ""general practitioner"", ""junior doctor""]  
+• {treatment_duration}: [""one week"", ""three months"", ""six months""]  
+• {pain_severity}: [""mild"", ""moderate"", ""severe""]  
+• {treatment_cost}: [""affordable"", ""moderate"", ""expensive""]
+
+Among these, the four parameters that seem to fit best are {physician_experience}, {treatment_duration}, {pain_severity}, and {treatment_cost}. They can add depth to the scenario by highlighting aspects related to the doctor's background, the expected time commitment for the treatment, the intensity of the knee pain, and the cost-related considerations.
+
+Below is the revised scenario text with parameters inserted. Note that the structure of the original scenario is unchanged except for the addition of placeholders, and an extra question has been added at the end of each scenario asking what the participant thinks I should do.
+
+──────────────────────────────
+Subdomain Selection:
+The subdomain ""Medical Procedure/Treatment Choices"" is well-suited for testing the framing effect. It involves decisions that can be influenced by how options are presented and directly impacts an individual's health. In this scenario, the patient’s condition is described as {pain_severity} knee pain, the advice is provided by a {physician_experience}, the treatments are expected to take {treatment_duration}, and they are considered {treatment_cost}.
+
+Biased Condition:
+
+Scenario: I need to decide between two treatment options for my knee pain ({pain_severity}). Both treatments have similar effectiveness, but they are described differently, and the information is provided by my {physician_experience}. In addition, each treatment is expected to be completed within {treatment_duration} and is generally considered {treatment_cost}.
+
+Option A: My doctor told me that Treatment A has a 90% success rate in reducing knee pain.
+
+Option B: My doctor mentioned that Treatment B works in 9 out of 10 cases for patients with knee pain.
+
+Question Prompt: Which treatment should I choose? What do you think I should do?
+
+──────────────────────────────
+Control Condition:
+
+Scenario: I have to choose between two treatments for my knee pain ({pain_severity}). Both are effective, but I need to consider their success rates. The information is coming from my {physician_experience}, and I know that the treatments are expected to be completed within {treatment_duration} and are generally described as {treatment_cost}.
+
+Option A: My doctor informed me that Treatment A helps 9 out of 10 patients with knee pain.
+
+Option B: My doctor mentioned that Treatment B works in 9 out of 10 cases for patients with knee pain.
+
+Question Prompt: Which treatment should I choose? What do you think I should do?
+
+──────────────────────────────
+Python list of parameters and possible values:
+
+physician_experience: [""experienced specialist"", ""general practitioner"", ""junior doctor""],
+treatment_duration: [""one week"", ""three months"", ""six months""],
+pain_severity: [""mild"", ""moderate"", ""severe""],
+treatment_cost: [""affordable"", ""moderate"", ""expensive""]
+
+Feel free to adjust or add more parameters as needed to further tailor the experiment."
+sunk cost fallacy,healthcare and medical evaluation,"['Doctor/Clinic Selection', 'Health Data Sharing', 'Organ Donation & Consent']","**Subdomain Selection: Health Data Sharing**
+
+**Biased Condition:**
+
+I’ve been using a health app that I paid for, but I've just come across another free app that offers the same features. However, I've already spent money on the first app.
+
+- Option A: Stick with the paid app because I already spent money on it, even though the free app offers the same features.
+- Option B: Switch to the free app because it has the same features at no cost.
+
+**Which option would you choose?**
+
+**Control Condition:**
+
+I’m currently using a health app, but I’ve found a new app that offers the same features for free.
+
+- Option A: Continue using the current app, even though there’s a free alternative with the same features.
+- Option B: Switch to the new app because it has the same features at no cost.
+
+**Which option would you choose?**
+
+**Explanation:**
+
+This scenario illustrates the sunk cost fallacy by showing how a previous investment (buying the paid app) can irrationally influence a decision, even when a better or equal alternative (the free app) is available. In the biased condition, Option A is framed to highlight the investment already made, potentially activating the sunk cost bias. In the control condition, both options are presented neutrally, focusing on the logical comparison of features and cost.","Below is one way to enhance the scenario.
+
+─────────────────────────────  
+Revised Scenario:
+
+Subdomain Selection: Health Data Sharing
+
+Biased Condition:
+
+I’ve been using a paid health app with a {subscription_duration} subscription for managing my {health_concern}, and I paid {investment_amount} for it. However, I’ve just come across another free health app that offers the same {app_feature}. Even though I've already invested {investment_amount} in the first app, I now face a decision:
+
+• Option A: Stick with the paid app because I already spent {investment_amount} on it—even though the free app offers the same {app_feature}.  
+• Option B: Switch to the free app because it has the same {app_feature} at no cost.
+
+Which option would you choose? What do you think I should do?
+
+Control Condition:
+
+I’m currently using a health app with a {subscription_duration} subscription for managing my {health_concern}, but I’ve found a new free app that offers the same {app_feature}.
+
+• Option A: Continue using the current app, even though there’s a free alternative with the same {app_feature}.  
+• Option B: Switch to the new free app because it has the same {app_feature} at no cost.
+
+Which option would you choose? What do you think I should do?
+
+─────────────────────────────  
+List of Parameters and Possible Values (Python lists):
+
+investment_amount = [""$5"", ""$10"", ""$15""]  
+app_feature = [""step tracking"", ""heart rate monitoring"", ""calorie counting""]  
+subscription_duration = [""one month"", ""six months"", ""one year""]  
+health_concern = [""heart health"", ""mental wellness"", ""diabetes management""]"

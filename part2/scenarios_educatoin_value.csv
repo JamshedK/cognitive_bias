@@ -1,0 +1,389 @@
+bias,domain,subdomain,scenario,enriched_scenario
+Anchoring Bias,education and learning,"['Student Behavior Interpretation', 'Exam & Study Choices', 'College/Internship Applications']","**Subdomain Selection:**
+
+The best subdomain for this experiment is **'Exam & Study Choices'**. This area is highly relevant to education and allows for clear exploration of how anchoring bias can affect decision-making related to academic performance and preparation.
+
+---
+
+**Biased condition:**
+
+I have a big math test coming up, and my friend told me that most students study for at least 10 hours to do well. Hearing this made me a bit nervous because I usually study for only 5 hours. Now, I'm wondering how much time I should spend studying for this test.  
+
+On a scale of 1 to 7, how important do you think it is for me to study more than 5 hours for this test?
+
+**Control condition:**
+
+I have a big math test coming up, and I usually prepare by studying for about 5 hours. I feel comfortable with this amount of study time, but I'm wondering if I should change my approach for this test.  
+
+On a scale of 1 to 7, how important do you think it is for me to study more than 5 hours for this test?
+
+---
+
+**Explanation:**
+
+This scenario is a good example of anchoring bias because it explores how the initial piece of information (the anchor) influences the participant's judgment. In the biased condition, the anchor is the friend's statement about most students studying for at least 10 hours, which may lead participants to rate the importance of studying more than 5 hours higher. In the control condition, no such anchor is provided, allowing participants to make a judgment based solely on the information about my usual study habits. This setup helps to determine whether the presence of an anchor affects participants' perceptions of how much study time is necessary.","### Possible Parameters
+
+1. **course_difficulty**: [""easy"", ""intermediate"", ""difficult""]
+2. **math_test_weight**: [""minor quiz"", ""important midterm"", ""final exam""]
+3. **study_advice_source**: [""friend"", ""teacher"", ""online study group""]
+4. **typical_study_hours**: [3, 5, 7]
+5. **suggested_study_hours**: [8, 10, 12]
+6. **personal_comfort_level**: [""confident"", ""comfortable"", ""anxious""]
+7. **peer_average_study_time**: [4, 6, 10]
+8. **exam_importance**: [""this test"", ""an upcoming assessment"", ""a crucial final""]
+9. **alternative_study_methods**: [""using flashcards"", ""taking practice exams"", ""joining a study group""]
+
+### Selected Parameters
+
+1. **math_test_weight**
+2. **study_advice_source**
+3. **typical_study_hours**
+4. **suggested_study_hours**
+
+### Revised Scenario
+
+**Biased condition:**
+
+I have a big {math_test_weight} coming up, and my {study_advice_source} told me that most students study for at least {suggested_study_hours} hours to do well. Hearing this made me a bit nervous because I usually study for only {typical_study_hours} hours. Now, I'm wondering how much time I should spend studying for this test.
+
+On a scale of 1 to 7, how important do you think it is for me to study more than {typical_study_hours} hours for this test?
+
+**Control condition:**
+
+I have a big {math_test_weight} coming up, and I usually prepare by studying for about {typical_study_hours} hours. I feel comfortable with this amount of study time, but I'm wondering if I should change my approach for this test.
+
+On a scale of 1 to 7, how important do you think it is for me to study more than {typical_study_hours} hours for this test?
+
+### List of Parameters and Their Possible Values
+
+math_test_weight: [""minor quiz"", ""important midterm"", ""final exam""]
+study_advice_source: [""friend"", ""teacher"", ""online study group""]
+typical_study_hours: [3, 5, 7]
+suggested_study_hours: [8, 10, 12]
+status quo,education and learning,"['Assignment/Grading', 'Student Behavior Interpretation', 'Academic Event Participation']","**Subdomain Selection:**  
+The best subdomain for testing the status quo bias in this context is 'Assignment/Grading'. This area directly relates to established practices and expectations in educational settings, making it a suitable ground for observing how people tend to favor existing norms.
+
+---
+
+**Biased condition:**
+
+I have been using the same grading system for years. It has always been simple for me and my students to understand, even though a few students have mentioned they find it unfair. Some teachers are suggesting a new system that might be more equitable, but it would take time to learn and implement. On a scale of 1 to 7, how much do you agree that I should keep using the current grading system because it is familiar and straightforward?
+
+**Control condition:**
+
+I am considering whether to continue with my current grading system or switch to a new one. The current system is easy to understand, but some students feel it is not fair. The new system might be more equitable but requires a learning curve. On a scale of 1 to 7, how much do you agree that I should keep using the current grading system?
+
+---
+
+**Explanation:**
+
+This scenario is a good example of the status quo bias because it presents a choice between maintaining an established practice (the current grading system) and adopting a new approach (a new grading system). The biased condition emphasizes the comfort and simplicity of the familiar system, potentially swaying the participant to favor it due to its familiarity and the implied burden of change. The control condition presents both options neutrally, allowing participants to evaluate the situation based on fairness and effectiveness without bias from the framing. This contrast allows the experiment to reveal whether participants are influenced by the status quo bias when the framing highlights the ease and familiarity of the current system.","Sure! Here's how you can enrich the scenario with parameters:
+
+### Possible Parameters
+1. **Grading System Complexity**: [""simple"", ""moderately complex"", ""complex""]
+2. **Student Feedback**: [""a few"", ""several"", ""many""]
+3. **Implementation Time**: [""a short time"", ""a moderate time"", ""a long time""]
+4. **Teacher Recommendations**: [""some teachers"", ""a majority of teachers"", ""all teachers""]
+5. **Equity Perception**: [""possibly more equitable"", ""certainly more equitable"", ""slightly more equitable""]
+6. **Familiarity Level**: [""familiar"", ""very familiar"", ""extremely familiar""]
+7. **System Understandability**: [""straightforward"", ""somewhat straightforward"", ""complicated""]
+
+### Selected Parameters
+- Grading System Complexity
+- Student Feedback
+- Implementation Time
+- Teacher Recommendations
+
+### Revised Scenario with Parameters
+
+**Subdomain Selection:**  
+The best subdomain for testing the status quo bias in this context is 'Assignment/Grading'. This area directly relates to established practices and expectations in educational settings, making it a suitable ground for observing how people tend to favor existing norms.
+
+---
+
+**Biased condition:**
+
+I have been using the same {grading_system_complexity} grading system for years. It has always been simple for me and my students to understand, even though {student_feedback} students have mentioned they find it unfair. {teacher_recommendations} are suggesting a new system that might be more equitable, but it would take {implementation_time} to learn and implement. On a scale of 1 to 7, how much do you agree that I should keep using the current grading system because it is familiar and straightforward?
+
+**Control condition:**
+
+I am considering whether to continue with my current {grading_system_complexity} grading system or switch to a new one. The current system is easy to understand, but {student_feedback} students feel it is not fair. The new system might be more equitable but requires a learning curve. On a scale of 1 to 7, how much do you agree that I should keep using the current grading system?
+
+---
+
+### List of Parameters with Possible Values
+
+```python
+grading_system_complexity = [""simple"", ""moderately complex"", ""complex""]
+student_feedback = [""a few"", ""several"", ""many""]
+implementation_time = [""a short time"", ""a moderate time"", ""a long time""]
+teacher_recommendations = [""some teachers"", ""a majority of teachers"", ""all teachers""]
+``` 
+
+This enriched scenario provides more flexibility by allowing adjustments to the details, making it useful for broader experiment designs about status quo bias in educational settings."
+risk aversion,education and learning,"['Academic Event Participation', 'College/Internship Applications', 'Scholarship/Program Application']","**Subdomain: Scholarship/Program Application**
+
+**Biased condition:**
+
+I heard about a prestigious scholarship that could really boost my future career. However, they only accept a few students each year, and most people I know who applied in the past didn't get it. I'm worried that applying might just be a waste of time since the chances of getting it seem so low. How likely do you think I should apply for this scholarship on a scale of 1 to 7?
+
+**Control condition:**
+
+I came across a scholarship that could be a great opportunity for my future. It's a competitive program, but applying could open up new possibilities for my career. I'm considering whether to apply or not. How likely do you think I should apply for this scholarship on a scale of 1 to 7?
+
+**Explanation:**
+
+This scenario is a good example of how framing can influence risk aversion. In the biased condition, the emphasis is on the low probability of success and the potential waste of time, which can activate loss aversion and discourage risk-taking behavior. The control condition, however, presents the same opportunity without emphasizing the negative aspects, allowing the participant to evaluate the decision more neutrally. By comparing the responses from both conditions, researchers can assess how framing impacts the willingness to take risks in the context of applying for scholarships.","1. **List of Possible Parameters:**
+   - {scholarship_name}: [""Global Leaders"", ""Innovators of Tomorrow"", ""Pioneers in Science""]
+   - {field_of_study}: [""engineering"", ""arts"", ""science"", ""business""]
+   - {number_of_applicants}: [""500"", ""300"", ""1000""]
+   - {acceptance_rate}: [""5%"", ""10%"", ""15%""]
+   - {benefit_description}: [""full tuition coverage"", ""mentorship program"", ""networking opportunities""]
+   - {time_cost}: [""several hours"", ""a few days"", ""a week""]
+   - {career_boost}: [""significant"", ""moderate"", ""minimal""]
+
+2. **Selected Parameters:**
+   - {scholarship_name}
+   - {field_of_study}
+   - {acceptance_rate}
+   - {benefit_description}
+
+3. **Revised Scenario:**
+
+**Biased Condition:**
+
+I heard about the {scholarship_name} scholarship in {field_of_study} that could really boost my future career. However, they only accept a few students each year with an acceptance rate of {acceptance_rate}, and most people I know who applied in the past didn't get it. I'm worried that applying might just be a waste of time since the chances of getting it seem so low. How likely do you think I should apply for this scholarship on a scale of 1 to 7?
+
+**Control Condition:**
+
+I came across the {scholarship_name} scholarship in {field_of_study} that could be a great opportunity for my future. It's a competitive program that offers {benefit_description}, but applying could open up new possibilities for my career. I'm considering whether to apply or not. How likely do you think I should apply for this scholarship on a scale of 1 to 7?
+
+4. **Parameters and their Possible Values:**
+
+```python
+    scholarship_name: [""Global Leaders"", ""Innovators of Tomorrow"", ""Pioneers in Science""],
+    field_of_study: [""engineering"", ""arts"", ""science"", ""business""],
+    acceptance_rate: [""5%"", ""10%"", ""15%""],
+    benefit_description: [""full tuition coverage"", ""mentorship program"", ""networking opportunities""]
+```"
+endowement effect,education and learning,"['Academic Event Participation', 'Exam & Study Choices', 'Assignment/Grading']","**Subdomain Selection: Assignment/Grading**
+
+**Biased condition:**
+
+I recently wrote an essay for my English class, and after turning it in, I found out that the teacher was considering using my essay as an example for future students. I feel really proud of my work and believe it's a great example of creativity and effort. How much do you agree that my essay should be used as a class example on a scale of 1 to 7?
+
+**Control condition:**
+
+I recently wrote an essay for my English class, and after turning it in, the teacher mentioned they were considering using an essay from the class as an example for future students. The teacher hasn't decided whose essay to use yet. How much do you agree that my essay should be used as a class example on a scale of 1 to 7?
+
+**Explanation:**
+
+This scenario is a good example of the endowment effect bias because, in the biased condition, the individual has a sense of ownership and pride in their essay, which may cause them to overvalue its quality and importance. In the control condition, the essay is viewed more objectively, without the influence of personal attachment. By comparing ratings across these two versions, the experiment can measure how much the endowment effect influences one's perception of their own work.","**Parameters and Possible Values:**
+
+1. {subject_matter}: ['English', 'History', 'Biology']
+2. {evaluation_type}: ['essay', 'project', 'report']
+3. {teacher_role}: ['considering', 'thinking about', 'deciding on']
+4. {use_purpose}: ['as an example', 'for educational purposes', 'as a teaching tool']
+5. {student_feeling}: ['proud', 'satisfied', 'pleased']
+
+**Selected Parameters:**
+
+- {subject_matter}
+- {evaluation_type}
+- {teacher_role}
+- {use_purpose}
+
+**Revised Scenario:**
+
+**Biased condition:**
+
+I recently wrote a {evaluation_type} for my {subject_matter} class, and after turning it in, I found out that the teacher was {teacher_role} using my {evaluation_type} {use_purpose} for future students. I feel really proud of my work and believe it's a great example of creativity and effort. How much do you agree that my {evaluation_type} should be used {use_purpose} on a scale of 1 to 7?
+
+**Control condition:**
+
+I recently wrote a {evaluation_type} for my {subject_matter} class, and after turning it in, the teacher mentioned they were {teacher_role} using a {evaluation_type} from the class {use_purpose} for future students. The teacher hasn't decided whose {evaluation_type} to use yet. How much do you agree that my {evaluation_type} should be used {use_purpose} on a scale of 1 to 7?
+
+**Parameters and Possible Values:**
+
+```python
+subject_matter = ['English', 'History', 'Biology']
+evaluation_type = ['essay', 'project', 'report']
+teacher_role = ['considering', 'thinking about', 'deciding on']
+use_purpose = ['as an example', 'for educational purposes', 'as a teaching tool']
+```"
+decoy effect,education and learning,"['Exam & Study Choices', 'Group Project Leadership', 'Student Behavior Interpretation']","**Subdomain Selection:**
+
+For this experiment, the subdomain 'Exam & Study Choices' is the best fit. This area is relevant to educational decision-making, which aligns well with testing the decoy effect.
+
+**Biased condition:**
+
+I have to choose between two study guides for my upcoming exam. Study Guide A is very detailed and covers all topics, but it's long and takes a lot of time to go through. Study Guide B is shorter and more focused but misses some topics. Then there's Study Guide C, which is even longer than A but not as detailed, making A look like a better option. How much do you think I should choose Study Guide A over B, on a scale of 1 to 7, where 1 means not at all and 7 means definitely?
+
+**Control condition:**
+
+I have to choose between two study guides for my upcoming exam. Study Guide A is very detailed and covers all topics, but it's long and takes a lot of time to go through. Study Guide B is shorter and more focused but misses some topics. I'm trying to decide which one to use to prepare. How much do you think I should choose Study Guide A over B, on a scale of 1 to 7, where 1 means not at all and 7 means definitely?
+
+**Explanation:**
+
+This scenario is a good example of the decoy effect because it introduces a third option, Study Guide C, which is not a viable choice but makes Study Guide A appear more attractive when compared to Study Guide B. In the biased condition, the presence of Study Guide C should shift preferences towards Study Guide A, demonstrating the decoy effect. The control condition presents the choice without the influence of a decoy, offering a neutral comparison of just the two main options. This setup helps to examine how the introduction of a third, inferior option can bias the decision-making process in favor of a particular choice.","### 1. Possible Parameters
+
+Here are potential parameters to enrich and make your scenario more flexible:
+
+- **subject_area**: [""math"", ""history"", ""biology"", ""literature""]
+- **exam_type**: [""midterm"", ""final"", ""quiz""]
+- **study_guide_difficulty**: [""basic"", ""intermediate"", ""advanced""]
+- **study_guide_format**: [""printed"", ""digital"", ""audiobook""]
+- **study_timeframe**: [""one week"", ""two weeks"", ""three days""]
+- **student_effort_level**: [""high"", ""moderate"", ""low""]
+- **detail_importance**: [""very high"", ""medium"", ""low""]
+
+### 2. Selected Parameters
+
+Here are the four parameters I selected:
+
+- **subject_area**
+- **exam_type**
+- **study_guide_format**
+- **study_timeframe**
+
+### 3. Revised Scenario
+
+**Subdomain Selection:**
+
+For this experiment, the subdomain 'Exam & Study Choices' is the best fit. This area is relevant to educational decision-making, which aligns well with testing the decoy effect.
+
+**Biased condition:**
+
+I have to choose between two study guides for my upcoming {exam_type} exam in {subject_area}. Study Guide A is very detailed and covers all topics, but it's long and takes a lot of time to go through. Study Guide B is shorter and more focused but misses some topics. Study Guide C is even longer than A but not as detailed, making A look like a better option. Considering these are {study_guide_format} guides and I have {study_timeframe} to prepare, how much do you think I should choose Study Guide A over B, on a scale of 1 to 7, where 1 means not at all and 7 means definitely?
+
+**Control condition:**
+
+I have to choose between two study guides for my upcoming {exam_type} exam in {subject_area}. Study Guide A is very detailed and covers all topics, but it's long and takes a lot of time to go through. Study Guide B is shorter and more focused but misses some topics. Considering these are {study_guide_format} guides and I have {study_timeframe} to prepare, how much do you think I should choose Study Guide A over B, on a scale of 1 to 7, where 1 means not at all and 7 means definitely?
+
+**Explanation:**
+
+This scenario is a good example of the decoy effect because it introduces a third option, Study Guide C, which is not a viable choice but makes Study Guide A appear more attractive when compared to Study Guide B. In the biased condition, the presence of Study Guide C should shift preferences towards Study Guide A, demonstrating the decoy effect. The control condition presents the choice without the influence of a decoy, offering a neutral comparison of just the two main options. This setup helps to examine how the introduction of a third, inferior option can bias the decision-making process in favor of a particular choice.
+
+This scenario is generated to test decoy effect in the context of education and learning.
+
+### Parameters and Possible Values
+
+```python
+    subject_area: [""math"", ""history"", ""biology"", ""literature""],
+    exam_type: [""midterm"", ""final"", ""quiz""],
+    study_guide_format: [""printed"", ""digital"", ""audiobook""],
+    study_timeframe: [""one week"", ""two weeks"", ""three days""]
+}
+```"
+framing effect,education and learning,"['Assignment/Grading', 'Academic Event Participation', 'Scholarship/Program Application']","**Subdomain Selection:**  
+The best subdomain for this experiment is 'Scholarship/Program Application.' This area provides a clear context where framing can significantly influence perceptions and decisions due to its inherent stakes and the evaluation of benefits.
+
+---
+
+**Biased condition:**
+
+I recently applied for a scholarship program that is highly competitive. They mentioned that only 10% of applicants are accepted, which makes me feel like the chances are very slim. I'm worried about whether it's even worth continuing to pursue this opportunity. How likely do you think I should continue applying for this scholarship on a scale of 1 to 7, where 1 is not at all likely and 7 is extremely likely?
+
+**Control condition:**
+
+I recently applied for a scholarship program. They mentioned that 10% of applicants are accepted, which means there's still a chance for me to be selected. I'm considering whether to continue pursuing this opportunity. How likely do you think I should continue applying for this scholarship on a scale of 1 to 7, where 1 is not at all likely and 7 is extremely likely?
+
+---
+
+**Explanation:**
+
+This scenario is a good example of the framing effect because it demonstrates how the same statistical information (10% acceptance rate) can be presented in two different ways to influence perception. In the biased condition, the framing emphasizes the low likelihood of success, potentially inducing a sense of discouragement or futility. In contrast, the control condition presents the same information without an emotional charge, allowing participants to evaluate the situation more objectively. By asking participants to rate the likelihood of continuing the application, the experiment tests whether the framing affects their decision-making process.","Sure, let's start by identifying potential parameters that could make this scenario more flexible and rich:
+
+### Possible Parameters
+1. **Scholarship_Type**: [""undergraduate"", ""postgraduate"", ""research"", ""international""]
+2. **Acceptance_Rate**: [5, 10, 15, 20]  # Represents the percentage of applicants accepted
+3. **Applicant_Attitude**: [""worried"", ""excited"", ""neutral"", ""hopeful""]
+4. **Program_Benefit**: [""full tuition coverage"", ""partial funding"", ""research grant"", ""monthly stipend""]
+5. **Application_Phase**: [""initial application"", ""interview stage"", ""final review""]
+6. **Personal_Impact**: [""few financial burdens"", ""overcome financial challenges"", ""opportunity of a lifetime""]
+
+### Selected Parameters
+I'll select four parameters that can sensibly fit into the scenario:
+
+1. **Scholarship_Type**
+2. **Acceptance_Rate**
+3. **Applicant_Attitude**
+4. **Program_Benefit**
+
+### Revised Scenario with Parameters
+
+**Subdomain Selection:**
+The best subdomain for this experiment is 'Scholarship/Program Application.' This area provides a clear context where framing can significantly influence perceptions and decisions due to its inherent stakes and the evaluation of benefits.
+
+---
+
+**Biased condition:**
+
+I recently applied for a {Scholarship_Type} scholarship program that is highly competitive. They mentioned that only {Acceptance_Rate}% of applicants are accepted, which makes me feel {Applicant_Attitude}. I'm worried about whether it's even worth continuing to pursue this opportunity for {Program_Benefit}. How likely do you think I should continue applying for this scholarship on a scale of 1 to 7, where 1 is not at all likely and 7 is extremely likely?
+
+**Control condition:**
+
+I recently applied for a {Scholarship_Type} scholarship program. They mentioned that {Acceptance_Rate}% of applicants are accepted, which means there's still a chance for me to be selected for {Program_Benefit}. I'm considering whether to continue pursuing this opportunity. How likely do you think I should continue applying for this scholarship on a scale of 1 to 7, where 1 is not at all likely and 7 is extremely likely?
+
+---
+
+### Parameters and Their Possible Values
+
+```python
+    Scholarship_Type: [""undergraduate"", ""postgraduate"", ""research"", ""international""],
+    Acceptance_Rate: [5, 10, 15, 20],
+    Applicant_Attitude: [""worried"", ""excited"", ""neutral"", ""hopeful""],
+    Program_Benefit: [""full tuition coverage"", ""partial funding"", ""research grant"", ""monthly stipend""]
+``` 
+
+These parameters offer variability while maintaining the core focus of the scenario on framing effects in educational contexts."
+sunk cost fallacy,education and learning,"['Student Behavior Interpretation', 'Academic Event Participation', 'College/Internship Applications']","**Selected Subdomain**: College/Internship Applications
+
+**Biased condition:**
+
+I have spent a lot of time and effort applying to a college that I am not really interested in anymore. I have already paid the application fee, and I even bought a special guidebook to help with the application process. Now, I am wondering if I should still apply to this college even though I don't want to go there. How strongly do you think I should continue with this application on a scale of 1 to 7?
+
+**Control condition:**
+
+I am considering whether to apply to a college that I recently heard about. I have not spent much time on the application yet, and I haven't paid any fees. I am not sure if I am interested in this college, and I am wondering if I should apply. How strongly do you think I should continue with this application on a scale of 1 to 7?
+
+**Explanation:**
+
+This scenario is a good example of the sunk cost fallacy because it contrasts a situation where the decision to continue with an application process is influenced by previous investments (time, money, and effort) against a neutral evaluation of interest in a new opportunity. The biased condition emphasizes the past resources committed to the application, which may pressure the individual to proceed due to the perceived loss of those resources, even if their interest has waned. The control condition presents a neutral choice without emphasizing any prior investment, allowing participants to evaluate the decision based solely on their current interest. This setup effectively tests whether participants are influenced by sunk costs when making decisions.","### Possible Parameters
+
+1. **college_name**: [""Northeast University"", ""Pacific State College"", ""Central Metropolitan Institute""]
+2. **application_fee_amount**: [""$50"", ""$100"", ""$150""]
+3. **guidebook_title**: [""The Ultimate College Application Guide"", ""Insider's Tips for Top Colleges"", ""Comprehensive Application Handbook""]
+4. **student_motivation**: [""prestige and academic reputation"", ""sports and extracurricular opportunities"", ""proximity to home and affordability""]
+5. **time_spent**: [""a few days"", ""several weeks"", ""an entire semester""]
+6. **current_interest_level**: [""highly interested"", ""somewhat interested"", ""not interested""]
+7. **applicants_feedback**: [""highly recommended by current students"", ""mixed reviews from alumni"", ""has an impressive growth in programs""]
+8. **competing_offer**: [""a scholarship offer"", ""an internship opportunity"", ""a gap year plan""]
+
+### Selected Parameters
+
+1. **college_name**
+2. **application_fee_amount**
+3. **guidebook_title**
+4. **student_motivation**
+
+### Revised Scenario
+
+**Selected Subdomain**: College/Internship Applications
+
+**Biased condition:**
+
+I have spent a lot of time and effort applying to {college_name} that I am not really interested in anymore. I have already paid the application fee of {application_fee_amount}, and I even bought {guidebook_title} to help with the application process. Initially, my application was motivated by {student_motivation}. Now, I am wondering if I should still apply to this college even though I don't want to go there. How strongly do you think I should continue with this application on a scale of 1 to 7?
+
+**Control condition:**
+
+I am considering whether to apply to {college_name} that I recently heard about. I have not spent much time on the application yet, and I haven't paid any fees. I am not sure if I am interested in this college, and I am wondering if I should apply. How strongly do you think I should continue with this application on a scale of 1 to 7?
+
+### Parameters and Possible Values
+
+```python
+college_name = [""Northeast University"", ""Pacific State College"", ""Central Metropolitan Institute""]
+application_fee_amount = [""$50"", ""$100"", ""$150""]
+guidebook_title = [""The Ultimate College Application Guide"", ""Insider's Tips for Top Colleges"", ""Comprehensive Application Handbook""]
+student_motivation = [""prestige and academic reputation"", ""sports and extracurricular opportunities"", ""proximity to home and affordability""]
+```"

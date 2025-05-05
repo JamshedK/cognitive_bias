@@ -1,0 +1,4 @@
+The decoy effect describes how, when we are choosing between two alternatives, the addition of a third, 
+less attractive option (the decoy) can influence our perception of the original two choices. 
+Decoys are “asymmetrically dominated:” they are completely inferior to one option (the target) but only partially inferior 
+to the other (the competitor). For this reason, the decoy effect is sometimes called the “asymmetric dominance effect.”
